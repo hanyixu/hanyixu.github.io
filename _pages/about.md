@@ -15,3 +15,4 @@ My interest in photography and videography was inspired by the cityscapes and na
 ## Research Interests
 - Social Media
 - Public Communications
+- Neural Network and Deep Leanring
