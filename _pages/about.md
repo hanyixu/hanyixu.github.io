@@ -13,6 +13,7 @@ I completed my undergraduate studies in advertising with a focus on new media st
 My interest in photography and videography was inspired by the cityscapes and natural beauty of my hometown, Ningbo, China. I enjoy capturing landscapes, exploring unique perspectives with drones, and creating distinctive images using film cameras.
 
 ## Research Interests
-- Social Media
-- Public Communications
-- Neural Network and Deep Leanring
+- TBD
+
+## Note
+This website is still under construction

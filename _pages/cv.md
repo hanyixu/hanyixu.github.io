@@ -16,7 +16,7 @@ Education
 
 Research Experience
 ======
-* Meaningful Math Research Group | Syracuse University (April 2023 – November 2024)
+* Meaningful Math Research Group, Syracuse University (April 2023 – November 2024)
   * Undergraduate Research Assistant
   * Principal Investigator: Dr. Nicole Fonger
   * Duties included:
@@ -25,7 +25,7 @@ Research Experience
     * Employed statistical techniques for survey data analysis
     * Attended conferences for research showcase and innovation
 
-* Supporting and Studying Syracuse Youth Interested in Teaching | Syracuse University (February 2022 - May 2022)
+* Supporting and Studying Syracuse Youth Interested in Teaching, Syracuse University (February 2022 - May 2022)
   * Undergraduate Research Assistant
   * Principal Investigator: Dr. Charlotte Sharpe
   * Duties included:
