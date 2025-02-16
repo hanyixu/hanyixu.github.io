@@ -11,7 +11,7 @@ redirect_from:
 
 Education
 ======
-* M.A. in Quantitative Methods in the Social Sciences, Columbia University, 2024 (expected)
+* M.A. in Quantitative Methods in the Social Sciences, Columbia University, 2025 (expected)
 * B.S. in Advertising, minor in Computer Engineering, Syracuse University, 2024 (Cum Laude)
 
 Research Experience
@@ -44,6 +44,29 @@ Talks and Presentations
 * Making Mathematics Meaningful: A Mixed-Methods Study of Undergraduate Students' Learning through Social Justice. 18th annual ACC Meeting of the Minds conference, South Bend, Indiana (April 2024)
 * Making mathematics meaningful: How learning about local social injustices develops undergraduate students' identity, intellect, skill, and criticality. SOURCE Fall Expo, Syracuse University (December 2023)
 * Enhancing Students' Inclusion and Belonging by Developing Meaningful Mathematics Literacy in the Place We Now Call Home. D.E.I.A. Symposium, Syracuse University (October 2023)
+
+Professional Experience
+======
+* Account Executive Intern, BlueFocus Communication Group, Shanghai, China
+  * Collaborated with Project Manager on Sony camera promotions for RED (Xiaohongshu) and Bilibili platforms
+  * Managed project workflows and timelines
+  * Ensured timely follow-up on client feedback and requests
+  * Contributed to communication plans for July and August campaigns
+  * Handled internal project procedures including initiation, completion, and contract applications
+
+* Advertising Intern, Boathouse Group Inc., Waltham, MA
+  * Led media optimization analysis with a team of five
+  * Utilized data from social media, websites, and databases to assess client's situation and competitors
+  * Designed content calendar and developed KPIs
+  * Created successful media plan selected by client among competing groups
+  * Provided data-driven recommendations for public relations improvement
+
+* Editor & Post-Production Associate, Associate Producer, Orange Television Network, Syracuse, NY
+  * Utilized Adobe Premiere for editing broadcast content and promotional materials
+  * Led camera and lighting teams as Director of Photography for Psych vs. Star
+  * Served as Associate Producer guiding show's creative direction
+  * Managed post-production processes and content strategies
+  * Increased digital engagement through polished episode publication
 
 Skills
 ======
