@@ -25,10 +25,10 @@ author:
   avatar           : "profile.png"
   name             : "Hanyi Xu"
   pronouns         : "He/Him/His"  
-  bio              : "Hello World"
+  bio              : #bio
   location         : "New York, NY"
   employer         : "Columbia University"
-  uri              : "hanyixu.com"
+  uri              : #"hanyixu.com"
   email            : "hx2400@columbia.edu" 
 
   # Academic websites
@@ -57,14 +57,14 @@ author:
   goodreads        : # Username
   google_plus      : # Username
   keybase          : # Username
-  instagram        : "hanyi.inc"
+  instagram        : # Username
   lastfm           : # Username
   linkedin         : "xuhanyi"
   mastodon         : # URL
   medium           : # URL
   pinterest        : # Username
   soundcloud       : # Username
-  steam            : "history6664"
+  steam            : # Username
   telegram         : # URL
   tumblr           : # Username
   twitter          : # Username for X / Twitter
