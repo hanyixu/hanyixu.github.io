@@ -25,12 +25,60 @@ Every year, some regions face severe, unpredictable flooding due to the combinat
 ## 2025/2/19 Literature Research Summary
 ### Paper 1 ###
 Citation: Shaiba, H., Marzouk, R., Nour, M. K., Negm, N., Hilal, A. M., Mohamed, A., ... & Rizwanullah, M. (2022). Weather Forecasting Prediction Using Ensemble Machine Learning for Big Data Applications. Computers, Materials & Continua, 73(2), 3367-3382.
+
 Main Objective: To develop an enhanced and reliable weather forecasting technique using ensemble machine learning methods that improves accuracy while reducing prediction time.
 Methods and Approaches:
 
 ### Paper 2 ###
 Citation: Khalifeh, A. F., AlQammaz, A. Y., Abualigah, L., Khasawneh, A. M., & Darabkh, K. A. (2022). A machine learning-based weather prediction model and its application on smart irrigation. Journal of Intelligent & Fuzzy Systems, 43(1), 1835-1842.
+
 Main Objective: To develop an enhanced weather forecasting model using Social Spider Algorithm-Least Square-Support Vector Machine (SSA-LS-SVM) for optimizing irrigation water usage in agriculture.
+
+
+### Models Used ###
+Paper 1 ("A machine learning-based weather prediction model and its application on smart irrigation"):
+- Main Model: SSA-LS-SVM (Social Spider Algorithm-Least Square-Support Vector Machine)
+  - SSA: optimization algorithm to tune LS-SVM parameters
+  - LS-SVM: improved version of traditional SVM using least squares
+- Performance: Tested for 24h, 48h, and 72h predictions
+- Variables: temperature, pressure, soil humidity
+
+Paper 2 ("Weather Forecasting Prediction Using Ensemble Machine Learning for Big Data Applications"):
+- Ensemble combining:
+  - Random Forest
+  - Gradient Boosting Decision Tree (GBDT)
+  - Naive Bayes Bernoulli (NBB)
+  - KNN (K-Nearest Neighbors)
+- Performance: Achieved 95% prediction accuracy
+- Variables: rainfall, wind speed, humidity, wind direction, cloud cover, temperature
+
+### Key ideas ###
+- Gradient Boosting: https://en.wikipedia.org/wiki/Gradient_boosting
+- Suggested pipline:
+  -  INDRA prediction pipeline:
+     -  Data Sources
+        -  Satellite Imagery (cloud top temperatures, water vapor)
+        -  Weather Sensors (humidity, pressure, temperature, wind speed)
+        -  Terrain Data (elevation, land use, urban topology)
+        -  Historical Records (past cloudburst events, rainfall patterns)
+     -  Pre-processing
+        -  Normalization (standardize different data scales)
+        -  Missing Value Handling (interpolation, padding)
+        -  Feature Engineering (derived weather indicators, temporal features)
+     -  Feature Selection
+        -  Gradient Boosting Feature Ranking
+        -  Importance Score Calculation
+        -  Dimension Reduction (reduce computational overhead)
+     -  Ensemble Model
+        -  Random Forest (handles non-linear relationships)
+        -  Gradient Boosting Trees (learns from residuals)
+        -  Support Vector Machine (for pattern recognition)
+        -  KNN (for local pattern matching)
+     -  Output
+        -  6-hour Prediction Window
+        -  Cloudburst Intensity Estimation
+        -  Risk Level Assessment (for emergency response)
+        -  Confidence Score (prediction reliability)
 
 ### Summary for two papers ###
 Paper one uses multiple machine learning techniques (Random Forest (RF), Gradient Boosting Decision Tree (GBDT), Naive Bayes Bernoulli (NBB), K-Nearest Neighbors (KNN)), and paper two uses a hybrid algorithm. Paper 1 tested different sizes of training sets and nodes.
