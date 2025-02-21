@@ -28,7 +28,7 @@ author:
   bio              : #bio
   location         : "New York, NY"
   employer         : "Columbia University"
-  uri              : #"hanyixu.com"
+  uri              : # uri
   email            : "hx2400@columbia.edu" 
 
   # Academic websites
