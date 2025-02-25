@@ -2,6 +2,7 @@
 title: "QMSS Practicum Project"
 excerpt: "Cloudburst Prediction Model"
 collection: portfolio
+date: 2025-5
 ---
 
 ## Project Overview
