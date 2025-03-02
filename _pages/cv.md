@@ -16,9 +16,17 @@ Education
 
 Research Experience
 ======
+* Cognitive Media Lab, UCSD/Columbia University (October 2024 - current)
+  * Research Assistant
+  * Principal Investigator: Dr. Michael R. Haupt
+  * Duties included:
+    * Participate in survey design and programming
+    * Analyze collected survey data using Python and SPSS
+    * Participate in manuscript writing
+
 * Meaningful Math Research Group, Syracuse University (April 2023 – November 2024)
   * Undergraduate Research Assistant
-  * Principal Investigator: Dr. Nicole Fonger
+  * Principal Investigator: Dr. Nicole L. Fonger
   * Duties included:
     * Conducted a comprehensive study investigating the effects of social justice themes on critical thinking, identity formation, and academic engagement of undergraduate students in precalculus
     * Utilized qualitative and quantitative research methods to collect and analyze data from 58 students
@@ -27,7 +35,7 @@ Research Experience
 
 * Supporting and Studying Syracuse Youth Interested in Teaching, Syracuse University (February 2022 - May 2022)
   * Undergraduate Research Assistant
-  * Principal Investigator: Dr. Charlotte Sharpe
+  * Principal Investigator: Dr. Charlotte J. Sharpe
   * Duties included:
     * Trained in qualitative research methods and ethics
     * Conducted on-site interviews and facilitated focus groups
