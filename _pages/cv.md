@@ -79,9 +79,11 @@ Professional Experience
 Skills
 ======
 * Programming
-  * Python (including machine learning and natural language processing)
-  * HTML
+  * Python (including machine learning, natural language processing, and data visualization)
+  * HTML5, Markdown
 * Data Analytics
+  * Python (Pandas, Numpy, ggplot2, etc.)
+  * SPSS
   * GWI Database
   * MRI Simmons
   * Nielsen Commspoint
