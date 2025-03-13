@@ -53,6 +53,12 @@ Talks and Presentations
 * Making mathematics meaningful: How learning about local social injustices develops undergraduate students' identity, intellect, skill, and criticality. SOURCE Fall Expo, Syracuse University (December 2023)
 * Enhancing Students' Inclusion and Belonging by Developing Meaningful Mathematics Literacy in the Place We Now Call Home. D.E.I.A. Symposium, Syracuse University (October 2023)
 
+Teaching Assistantship
+======
+* Columbia University, QMSS GR5067 Natural Language Processing Social Sciences, Spring 2025
+* Syracuse University, FYS 101 First Year Seminar, Fall 2022, Fall 2023
+* Syraucse University, ECS 116 AEW for Calculus II, Fall 2021
+
 Professional Experience
 ======
 * Account Executive Intern, BlueFocus Communication Group, Shanghai, China
