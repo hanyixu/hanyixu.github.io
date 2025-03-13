@@ -62,7 +62,7 @@ Professional Experience
   * Contributed to communication plans for July and August campaigns
   * Handled internal project procedures including initiation, completion, and contract applications
 
-* Advertising Intern, Boathouse Group Inc., Waltham, MA
+* Marketing Intern, Boathouse Group Inc., Waltham, MA
   * Led media optimization analysis with a team of five
   * Utilized data from social media, websites, and databases to assess client's situation and competitors
   * Designed content calendar and developed KPIs
