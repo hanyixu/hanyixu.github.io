@@ -15,4 +15,4 @@ My interest in photography and videography was inspired by the cityscapes and na
 ## Note
 This website is still under construction
 
-<a href="https://pcpartpicker.com/list/LGXPYd" style="color:#ffffff">Here is my computer build.</a>
+<a href="https://pcpartpicker.com/list/hQL42x" style="color:#ffffff">Here is my computer build.</a>
