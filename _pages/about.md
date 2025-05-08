@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-I completed my undergraduate studies in advertising with a focus on new media strategy. Currently, I am expanding my expertise in data analysis and researching large language models. My research lies at the intersection of human-computer interaction (HCI), digital communication, and media psychology. I am particularly interested in how users interact with and are affected by digital environments such as video games, social media platforms, and emerging interfaces (e.g., virtual/augmented reality).
+I completed my undergraduate studies in advertising with a focus on new media strategy. Currently, I am expanding my expertise in data analysis and researching large language models. My research lies at the intersection of media psychology, human-computer interaction, and computational social science. I study how digital media—particularly social media platforms and online games—shape users’ emotions, identities, and social behaviors. My work uses natural language processing, semantic analysis, and survey experiments to explore topics such as gendered communication in gaming, loneliness in digital spaces, and behavioral interventions to promote civic engagement. I aim to leverage data-driven methods to understand and improve the psychological and social impacts of emerging media technologies.
 
 Specifically, I am curious about the concept of meaningful media use—how people engage with games or communication technologies not just for entertainment, but for connection, identity expression, learning, and even healing. My goal is to investigate questions such as:
 - How do design features in interactive media influence user immersion, empathy, or aggression?
