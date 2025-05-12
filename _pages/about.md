@@ -22,4 +22,5 @@ I am also interested in photgraphy. My interest in photography and videography w
 ## Note
 This website is still under construction
 
-<a href="https://pcpartpicker.com/list/pyDKdb" style="color:#ffffff">Here is my computer build.</a>
+<a href="https://pcpartpicker.com/list/pyDKdb" style="color:#ffffff">Here is my computer build.</a> <br><br>
+<a href="http://www.3dmark.com/spy/55808007" style="color:#ffffff">Here is my computer test result.</a>
