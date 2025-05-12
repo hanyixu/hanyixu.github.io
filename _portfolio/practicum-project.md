@@ -105,3 +105,44 @@ And we will be facing issues like:
 - Balancing accuracy vs. prediction time
 - Model performance varying across different weather parameters (e.g., pressure being harder to predict than temperature)
 - Need for sufficient historical data to train models effectively
+
+
+
+### The Project Final Report
+
+### Problem Statement
+
+As part of the QMSS Practicum, I am contributing to Project INDRA, sponsored by Alt Surya Inc., which aims to build a machine learning–powered early warning system for urban cloudbursts. The project addresses the urgent need for accurate, short-term flood predictions, especially in Asia-Pacific regions where over 35% of global flood events occur annually. Our team is developing a prototype that predicts cloudbursts within a 6-hour window using multiple public datasets, including NOAA and FEMA, and satellite and radar imaging data. We are leveraging time series analysis, convolutional neural networks, and precision-recall metrics to improve prediction accuracy beyond the current 50% threshold. The model is intended to inform city planners, emergency responders, and residents, contributing to UN SDGs related to climate resilience, infrastructure, and sustainable communities.
+
+### Literature Review
+
+Our cloudburst prediction model draws from recent advancements in ensemble and hybrid machine learning approaches for weather forecasting. Inspired by Shaiba et al. (2022), we employ ensemble learning techniques such as Random Forest, Gradient Boosting Decision Trees, Naive Bayes, and K-Nearest Neighbors, combined through a max voting mechanism. This method has demonstrated high predictive accuracy (up to 95%) and efficient processing even with large datasets, making it suitable for high-frequency urban weather data.
+
+Additionally, we incorporate lessons from Khalifeh et al. (2022), who introduced a hybrid SSA-LS-SVM model that optimized prediction performance across 24–72-hour windows using atmospheric parameters like temperature, humidity, and pressure. These approaches support our goal of identifying cloudburst events within a tight 6-hour window, handling multi-parameter interactions, and maintaining model performance across diverse meteorological conditions.
+
+### Data Processing and Feature Engineering
+
+In our group’s data exploration for the INDRA cloudburst prediction project, we focused on reviewing 6–7 publicly available data sources, prioritizing those that offered time series of atmospheric measurements and weather imagery relevant to the Asia Pacific region. We assessed each portal's accessibility, data types (e.g., satellite, radar, precipitation), API support, and documentation quality, recording our findings in the shared spreadsheet. We then selected the most promising source and initiated a shared Colab notebook, where we began loading weather data for targeted locations and timeframes.
+
+Our initial focus was on identifying cloudburst events—defined as precipitation rates exceeding 100mm/hour—within the last five years. We successfully extracted and visualized weather data for short periods, noting any data quality issues such as missing values or gaps in coverage. Through this process, we began assembling a small, structured dataset of cloudburst events and associated pre-event measurements, which will be foundational for training and evaluating our predictive model.
+
+### Model Implementation and Evaluation
+
+For our cloudburst prediction model, we implemented a Random Forest classifier due to its robustness against noise and its ability to handle high-dimensional data with nonlinear interactions. The model parameters were carefully tuned, using 200 estimators and a maximum depth of 10, with class weighting set to "balanced" to address class imbalance. This approach allowed us to assess feature importance and achieved a strong ROC AUC score of 0.8551, although precision remained low, indicating the need for better handling of false positives.
+
+We also experimented with an Autoencoder, primarily for its capacity in unsupervised anomaly detection. Autoencoders are particularly suited to high-dimensional meteorological data and were used to capture deviations from normal weather patterns that might indicate a cloudburst. While it performed less effectively than Random Forest in terms of recall and F1 score, the autoencoder provided useful insights into outlier behavior and helped complement our supervised learning approach.
+
+Our feature engineering process was critical in enhancing model performance. We extracted time-based features (e.g., hour, month, day-of-year), transformed wind data into U/V components, and derived precipitation statistics such as cumulative and maximum rainfall. Additionally, we created lag features (1h/3h/6h change rates) to capture temporal dynamics. Scaling and time-based train-validation-test splits were applied, and we addressed class imbalance by exploring techniques such as SMOTE and undersampling. These engineered features were essential for capturing the rapid, localized shifts in weather conditions characteristic of cloudburst events.
+
+### Ethical Consideration
+
+An important ethical consideration in developing our cloudburst prediction model is the risk of misinformation due to false positives or missed events. Inaccurate predictions—whether overestimating or underestimating risk—could lead to unnecessary public panic, erosion of trust in early warning systems, or a failure to act in time during real emergencies. Given the high stakes in disaster response, it is crucial to communicate model uncertainty transparently and ensure that any deployment is accompanied by clear disclaimers, continuous validation, and collaboration with domain experts and local authorities.
+
+### AI Assistants Use and Process Reflection
+
+During the project, we used AI for both paper reading and coding. When searching for papers, we used AI to summarize them. After summarizing, we asked AI to classify whether the paper was relevant to our situation. AI was able to compare our data and parameters and provide helpful feedback.  
+We use Claude for the majority of coding. The good thing about Claude is that it saves time. However, to better optimize the code and the model, we need to understand the code and fine-tune it ourselves to ensure it aligns with our specific data structure, performance goals, and interpretability needs.
+
+### Conclusion and Future Directions
+
+Looking ahead, our future work will focus on enhancing model performance by incorporating higher-resolution datasets, such as satellite and radar imagery, to capture localized weather patterns more effectively. We also plan to address the current class imbalance issue through advanced resampling techniques like SMOTE and refine our feature set by engineering additional meteorological indicators. Exploring neural network and deep learning architectures, including convolutional models, will help capture spatial and temporal dependencies more robustly. Finally, we aim to develop a user-friendly interface for stakeholders and consult climate science experts to ensure our model aligns with real-world forecasting needs and deployment scenarios.
