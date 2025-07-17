@@ -66,6 +66,11 @@
   }
 }
 
+.citation-text {
+  color: var(--global-text-color-light);
+  font-size: $type-size-6;
+}
+
 .archive__item-teaser {
   border-radius: $border-radius;
   overflow: hidden;

@@ -1,0 +1,38 @@
+/* Calibri Font Definitions */
+
+@font-face {
+    font-family: 'Calibri';
+    src: url('../fonts/calibri.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Calibri';
+    src: url('../fonts/calibri-bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Calibri';
+    src: url('../fonts/calibri-italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Calibri';
+    src: url('../fonts/calibri-bold-italic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* Apply Calibri to all elements */
+body, h1, h2, h3, h4, h5, h6, p, div, span, a, li, td, th, input, textarea, button {
+    font-family: 'Calibri', -apple-system, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif !important;
+} 

@@ -105,6 +105,13 @@
     margin-top: -1.5em;
     padding-left: 1.25rem;
   }
+
+  /* Hide PDF embed on mobile devices */
+  embed[type="application/pdf"] {
+    @include breakpoint($small) {
+      display: none;
+    }
+  }
 }
 
 .page__hero {
