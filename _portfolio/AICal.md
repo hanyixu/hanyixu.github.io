@@ -2,7 +2,7 @@
 title: "AI Calendar Processor"
 excerpt: "A tool to process and analyze calendar data using Google Gemini"
 collection: portfolio
-date: 2023-08-01
+date: 2023-07-21
 ---
 
 I made a very interesting tool that processes calendar data using Google Gemini.
