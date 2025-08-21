@@ -14,8 +14,8 @@ main:
   - title: "Publications"
     url: /publications/
 
-  # - title: "talks"
-  #   url: /talks/    
+# - title: "talks"
+#   url: /talks/    
 
 #  - title: "Teaching"
 #    url: /teaching/    
@@ -25,5 +25,5 @@ main:
 #   url: /year-archive/
     
     
-  - title: "Guide"
-    url: /markdown/
+# - title: "Guide"
+#   url: /markdown/

@@ -9,3 +9,5 @@ export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
 bundle exec jekyll serve -l -H localhost
 
 then visit http://localhost:4000/
+
+for guide: http://localhost:4000/markdown/
