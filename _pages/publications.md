@@ -28,14 +28,11 @@ Xu, H.
 **Making mathematics meaningful: How learning about local social injustices develops undergraduate students’ identity, intellect, skill, and criticality**  
 Boutros, E., Fonger, N. L., Wu, Q., & Xu, H.  
 <span style="color:gray">Paper presented at the SOURCE Fall Expo, Syracuse University. December 2023.</span>  
-[Download PDF](#) | [Link](#)  
 
 **Enhancing students’ inclusion and belonging by developing meaningful mathematics literacy in the place we now call home**  
 Boutros, E., Fonger, N. L., Wu, Q., & Xu, H.  
 <span style="color:gray">Paper presented at the D.E.I.A. Symposium, Syracuse University. October 2023.</span>  
-[Download PDF](#) | [Link](#)  
 
 **Making mathematics meaningful: How learning about local injustices develops undergraduate students’ criticality, identities, intellect, skill, and emotion**  
 Boutros, E., Fonger, N. L., Wu, Q., & Xu, H.  
 <span style="color:gray">Poster session presented at the SOURCE Symposium, Syracuse University. August 2023.</span>  
-[Download PDF](#) | [Link](#)  
