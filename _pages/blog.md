@@ -10,7 +10,7 @@ redirect_from:
 Here are some interesting papers I read.
 
 
-## May The Force be With You: Cloning Distant Objects to Improve Medium-Field Interactions in Augmented Reality
+## [May The Force be With You: Cloning Distant Objects to Improve Medium-Field Interactions in Augmented Reality](https://ieeexplore.ieee.org/document/10937415)
 Year: 2025  
 Author: Tamboli et al.
 
@@ -38,7 +38,7 @@ A key strength is its **empirical validation**, contrasting The Force with exist
 
 ---
 
-## Reality Proxy: Fluid Interactions with Real-World Objects in MR via Abstract Representations
+## [Reality Proxy: Fluid Interactions with Real-World Objects in MR via Abstract Representations](https://arxiv.org/abs/2507.17248)
 Year: 2025  
 Author: Liu et al.
 
