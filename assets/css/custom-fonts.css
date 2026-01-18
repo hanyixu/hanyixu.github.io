@@ -1,38 +1,54 @@
-/* Site Sans Font Definitions (Regular, Italic, SemiBold, SemiBoldItalic) */
+/* Lato Font Definitions */
 
 @font-face {
-    font-family: 'Site Sans';
-    src: url('../fonts/Regular.ttf') format('truetype');
+    font-family: 'Lato';
+    src: url('../fonts/Lato-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Site Sans';
-    src: url('../fonts/SemiBold.ttf') format('truetype');
-    font-weight: 600;
+    font-family: 'Lato';
+    src: url('../fonts/Lato-Light.ttf') format('truetype');
+    font-weight: 300;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Site Sans';
-    src: url('../fonts/Italic.ttf') format('truetype');
+    font-family: 'Lato';
+    src: url('../fonts/Lato-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('../fonts/Lato-Italic.ttf') format('truetype');
     font-weight: 400;
     font-style: italic;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Site Sans';
-    src: url('../fonts/SemiBoldItalic.ttf') format('truetype');
-    font-weight: 600;
+    font-family: 'Lato';
+    src: url('../fonts/Lato-LightItalic.ttf') format('truetype');
+    font-weight: 300;
     font-style: italic;
     font-display: swap;
 }
 
-/* Apply Site Sans to all elements */
+@font-face {
+    font-family: 'Lato';
+    src: url('../fonts/Lato-BoldItalic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* Apply Lato to all elements */
 body, h1, h2, h3, h4, h5, h6, p, div, span, a, li, td, th, input, textarea, button {
-    font-family: 'Site Sans', -apple-system, "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif !important;
+    font-family: 'Lato', -apple-system, "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif !important;
 }
