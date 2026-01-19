@@ -10,10 +10,18 @@
           {% for link in site.data.navigation.main %}
             {% if link.url contains 'http' %}
               {% assign domain = '' %}
-              {% else %}
+            {% else %}
               {% assign domain = base_path %}
             {% endif %}
-            <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}">{{ link.title }}</a></li>
+            {% comment %}Check if current page matches navigation link{% endcomment %}
+            {% assign link_path = link.url | remove_first: '/' %}
+            {% assign page_path = page.url | remove_first: base_path | remove_first: '/' %}
+            {% if page.url == link.url or page_path == link_path or page.url contains link.url %}
+              {% assign active_class = 'active' %}
+            {% else %}
+              {% assign active_class = '' %}
+            {% endif %}
+            <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}" class="{{ active_class }}">{{ link.title }}</a></li>
           {% endfor %}
         </ul>
         <ul class="hidden-links hidden"></ul>
