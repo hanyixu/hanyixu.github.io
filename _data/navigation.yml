@@ -21,9 +21,8 @@ main:
 # - title: "talks"
 #   url: /talks/      
   
-  - title: "Blogs"
-    url: /blog/
-    
+# - title: "Blogs"
+#   url: /blog/
     
 # - title: "Guide"
 #   url: /markdown/
