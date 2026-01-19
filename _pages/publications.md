@@ -42,6 +42,16 @@ permalink: /publications/
 
 <div class="pub-item">
   <div class="pub-left">
+    <div class="pub-title">Why Games Stop Feeling Fun: A Computational Approach to Emotional Demand in Play</div>
+    <div class="pub-authors">Xu, H.</div>
+    <div class="pub-meta">M.A. Thesis, Columbia University. January 2026</div>
+    <div>[<a href="https://doi.org/10.7916/3mm4-3482">DOI</a>] | [<a href="https://doi.org/10.7916/3mm4-3482">Academic Commons</a>]</div>
+  </div>
+  <div class="pub-year">2026</div>
+</div>
+
+<div class="pub-item">
+  <div class="pub-left">
     <div class="pub-title">Emotions in social justice mathematics: Students' experience from a college precalculus classroom</div>
     <div class="pub-authors">Xu, H., Raja, W., Boutros, E., Wu, Q., & Fonger, N. L.</div>
     <div class="pub-meta">Paper presented at the 46th Annual Meeting of the North American Chapter of the International Group for the Psychology of Mathematics Education, Cleveland, OH. November 2024</div>

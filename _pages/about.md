@@ -8,6 +8,9 @@ redirect_from:
   - /about.html
 ---
 
+Syracuse University 24' <br>
+Columbia University 26'
+
 I recently graduated from Columbia University. I am interested in the intersection of media psychology, Human-Computer Interaction (HCI), and computational social science. My work uses data-driven methods to explore how digital platforms, especially online games, shape user emotions and identities.
 
 📝 Research Interests: I investigate the psychological impact of emerging technologies and Large Language Models (LLMs).

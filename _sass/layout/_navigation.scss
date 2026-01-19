@@ -176,6 +176,7 @@
   position: relative;
   min-width: 250px;
   background: var(--global-bg-color);
+  font-family: "Lato", $sans-serif;
 
   a {
     display: block;
@@ -183,9 +184,14 @@
     padding: 0.5rem 0;
     color: var(--global-masthead-link-color);
     text-decoration: none;
+    font-weight: 300; /* Lato Light for non-active items */
 
     &:hover {
       color: var(--global-masthead-link-color-hover);
+    }
+
+    &.active {
+      font-weight: 400; /* Lato Normal for active items */
     }
   }
 
@@ -210,11 +216,12 @@
       vertical-align: middle;
 
       &:first-child {
-        font-weight: bold;
+        font-weight: 400; /* Lato Regular for name */
         text-wrap: wrap;
 
         a {
           margin-left: 0;
+          font-weight: 400; /* Lato Regular for name */
         }
       }
 
@@ -266,10 +273,15 @@
       margin: 0;
       padding: 10px 20px;
       font-size: $type-size-5;
+      font-weight: 300; /* Lato Light for non-active items */
 
       &:hover {
         color: var(--global-masthead-link-color-hover);
         background: var(--global-border-color);
+      }
+
+      &.active {
+        font-weight: 400; /* Lato Normal for active items */
       }
     }
 
