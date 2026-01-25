@@ -26,5 +26,5 @@ I recently graduated from Columbia University. I am interested in the intersecti
 📷 Through the Lens Outside the lab, I am an avid photographer. My style is rooted in the cityscapes of my hometown, Ningbo, China 🇨🇳. I enjoy capturing unique perspectives using drones and film cameras 🎞️.
 
 
-<a href="https://pcpartpicker.com/list/pyDKdb" style="color:#ffffff">Here is my computer build.</a> <br><br>
+<a href="https://pcpartpicker.com/list/nM6LC8" style="color:#ffffff">Here is my computer build.</a> <br><br>
 <a href="http://www.3dmark.com/spy/55808007" style="color:#ffffff">Here is my computer test result.</a>
