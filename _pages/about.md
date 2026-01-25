@@ -13,7 +13,7 @@ Columbia University 26'
 
 I recently graduated from Columbia University. I am interested in the intersection of media psychology, Human-Computer Interaction (HCI), and computational social science. My work uses data-driven methods to explore how digital platforms, especially online games, shape user emotions and identities.
 
-📝 Research Interests: I investigate the psychological impact of emerging technologies and Large Language Models (LLMs).
+📝 Research Interests: I am interested in understanding why and how interactive media shapes users’ emotions.
 - Gaming & Society: Analyzing gendered communication and toxicity in multiplayer environments.
 - Digital Well-being: Exploring loneliness and social connection in virtual spaces.
 - Civic Engagement: Designing behavioral interventions to promote positive social outcomes.
