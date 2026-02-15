@@ -5,7 +5,6 @@
 .masthead {
   position: fixed;
   background: var(--global-bg-color);
-  border-bottom: 1px solid var(--global-border-color);
   height: $masthead-height;
   top: 0;
   width: 100%;
@@ -54,6 +53,6 @@
 
   &--lg {
     padding-right: 2em;
-    font-weight: 700;
+    font-weight: 300; /* Lato Light - same as sidebar name below photo */
   }
 }

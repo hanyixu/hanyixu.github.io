@@ -184,14 +184,14 @@
     padding: 0.5rem 0;
     color: var(--global-masthead-link-color);
     text-decoration: none;
-    font-weight: 300; /* Lato Light for non-active items */
+    font-weight: 400; /* Lato Regular for nav links */
 
     &:hover {
       color: var(--global-masthead-link-color-hover);
     }
 
     &.active {
-      font-weight: 400; /* Lato Normal for active items */
+      font-weight: 400; /* Lato Regular for active items */
     }
   }
 
@@ -216,12 +216,13 @@
       vertical-align: middle;
 
       &:first-child {
-        font-weight: 400; /* Lato Regular for name */
+        font-weight: 300; /* Lato Light - same as sidebar name */
+        font-size: $type-size-3;
         text-wrap: wrap;
 
         a {
           margin-left: 0;
-          font-weight: 400; /* Lato Regular for name */
+          font-weight: inherit;
         }
       }
 
@@ -273,7 +274,7 @@
       margin: 0;
       padding: 10px 20px;
       font-size: $type-size-5;
-      font-weight: 300; /* Lato Light for non-active items */
+      font-weight: 400; /* Lato Regular */
 
       &:hover {
         color: var(--global-masthead-link-color-hover);
@@ -281,7 +282,7 @@
       }
 
       &.active {
-        font-weight: 400; /* Lato Normal for active items */
+        font-weight: 400; /* Lato Regular for active items */
       }
     }
 

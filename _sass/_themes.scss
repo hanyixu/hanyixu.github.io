@@ -9,6 +9,10 @@
 /* Used to set the size for <em> */
 $doc-font-size              : 20;
 
+/* Line height */
+$line-height-base            : 1.6;
+$line-height-heading         : 1.4;
+
 /* Paragraph indention */
 $paragraph-indent           : false;
 $indent-var                 : 1.3em;
@@ -29,19 +33,19 @@ $bodoni                     : "Bodoni MT", serif;
 $calisto                    : "Calisto MT", serif;
 $garamond                   : Garamond, serif;
 
-/* Type scale */
-$type-size-1                : 2.441em;
-$type-size-2                : 1.953em;
-$type-size-3                : 1.563em;
-$type-size-4                : 1.25em;
-$type-size-5                : 1.1em;
-$type-size-6                : 0.75em;
-$type-size-7                : 0.6875em;
-$type-size-8                : 0.625em;
+/* Type scale - modular scale (1.25 ratio), round values */
+$type-size-1                : 2.5em;   /* hero titles */
+$type-size-2                : 2em;     /* page titles */
+$type-size-3                : 1.5em;   /* section headings */
+$type-size-4                : 1.25em;  /* subheadings */
+$type-size-5                : 1.125em; /* emphasized / nav */
+$type-size-6                : 0.875em; /* small text */
+$type-size-7                : 0.75em;  /* captions */
+$type-size-8                : 0.625em; /* fine print */
 
 $global-font-family         : "Lato", $sans-serif;
 $header-font-family         : "Lato", $sans-serif;
-$caption-font-family        : "Lato", $serif;
+$caption-font-family        : "Lato", $sans-serif;
 
 /* ==========================================================================
    Breakpoints
