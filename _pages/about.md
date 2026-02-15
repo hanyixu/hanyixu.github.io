@@ -9,9 +9,11 @@ redirect_from:
 ---
 
 Syracuse University 24' <br>
-Columbia University 26'
+Columbia University 26' <br>
+?????? 30' <br>
+📍 New York, NY <br>
 
-I recently graduated from Columbia University. I am interested in the intersection of media psychology, Human-Computer Interaction (HCI), and computational social science. My work uses data-driven methods to explore how digital platforms, especially online games, shape user emotions and identities.
+I am a PhD student at [TBD]. I am interested in the intersection of media psychology, Human-Computer Interaction (HCI), and computational social science. My work uses data-driven methods to explore how digital platforms, especially online games, shape user emotions and identities.
 
 📝 Research Interests: I am interested in understanding why and how interactive media shapes users’ emotions.
 - Gaming & Society: Analyzing gendered communication and toxicity in multiplayer environments.
