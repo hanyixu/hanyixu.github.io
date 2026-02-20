@@ -10,7 +10,7 @@ redirect_from:
 
 Syracuse University 24' <br>
 Columbia University 26' <br>
-?????? 30' <br>
+Florida State University, in progress <br>
 📍 New York, NY <br>
 
 I am a PhD student at [TBD]. I am interested in the intersection of media psychology, Human-Computer Interaction (HCI), and computational social science. My work uses data-driven methods to explore how digital platforms, especially online games, shape user emotions and identities.
