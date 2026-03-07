@@ -8,12 +8,12 @@ redirect_from:
   - /about.html
 ---
 
-Syracuse University 24' <br>
-Columbia University 26' <br>
-Florida State University, in progress <br>
-📍 New York, NY <br>
+Syracuse University, BS<br>
+Columbia University, MA<br>
+Florida State University, PhD student<br>
+📍 Ningbo, China<br>
 
-I am a PhD student at [TBD]. I am interested in the intersection of media psychology, Human-Computer Interaction (HCI), and computational social science. My work uses data-driven methods to explore how digital platforms, especially online games, shape user emotions and identities.
+I am a PhD student at Florida State University School of Communication. I am interested in the intersection of media psychology, Human-Computer Interaction (HCI), and computational social science. My work uses data-driven methods to explore how digital platforms, especially online games, shape user emotions and identities.
 
 📝 Research Interests: I am interested in understanding why and how interactive media shapes users’ emotions.
 - Gaming & Society: Analyzing gendered communication and toxicity in multiplayer environments.
