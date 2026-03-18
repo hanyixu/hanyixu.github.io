@@ -8,16 +8,10 @@ redirect_from:
   - /about.html
 ---
 
-<<<<<<< HEAD
-Syracuse University 24' <br>
-Columbia University 26' <br>
-📍 Florida State University <br>
-=======
 Syracuse University, BS<br>
 Columbia University, MA<br>
 Florida State University, PhD student<br>
 📍 Ningbo, China<br>
->>>>>>> 076ce1d05c0e8f777650d73484eb13542a41ee3d
 
 I am a PhD student at Florida State University School of Communication. I am interested in the intersection of media psychology, Human-Computer Interaction (HCI), and computational social science. My work uses data-driven methods to explore how digital platforms, especially online games, shape user emotions and identities.
 
