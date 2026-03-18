@@ -76,6 +76,16 @@ permalink: /publications/
 
 <div class="pub-item">
   <div class="pub-left">
+    <div class="pub-title">Electrophysiological and behavioral indices of numerical perception and cognition</div>
+    <div class="pub-authors">Rhee, V., Chen, Z., Gushiken, Y., Bakhru, K., <strong>Xu, H.</strong>, Bisbee, N., Li, Y., Tang, J. E., & Gordon, P.</div>
+    <div class="pub-meta">Poster presented at the Annual Meeting of the Cognitive Neuroscience Society, Vancouver, Canada. March 2026</div>
+    <div>[<a href="http://hanyixu.github.io/files/CNS2026.pdf">Download PDF</a>]</div>
+  </div>
+  <div class="pub-year">2026</div>
+</div>
+
+<div class="pub-item">
+  <div class="pub-left">
     <div class="pub-title">Making mathematics meaningful: A mixed-methods study of undergraduate students' learning through social justice</div>
     <div class="pub-authors">Xu, H.</div>
     <div class="pub-meta">Paper presented at the 18th Annual ACC Meeting of the Minds Conference, South Bend, IN. April 2024</div>
