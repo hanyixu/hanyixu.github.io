@@ -227,9 +227,9 @@ body:hover .visually-hidden button {
     color: $foursquare-color;
   }
 
-  .fa-github,
-  .fa-github-alt,
-  .fa-github-square {
+  .author__urls .fa-github,
+  .author__urls .fa-github-alt,
+  .author__urls .fa-github-square {
     color: $github-color;
   }
 
@@ -252,8 +252,8 @@ body:hover .visually-hidden button {
     color: $lastfm-color;
   }
 
-  .fa-linkedin,
-  .fa-linkedin-square {
+  .author__urls .fa-linkedin,
+  .author__urls .fa-linkedin-square {
     color: $linkedin-color;
   }
 
@@ -262,8 +262,8 @@ body:hover .visually-hidden button {
     color: $mastodon-color;
   }
 
-  .ai-orcid,
-  .ai-orcid-square {
+  .author__urls .ai-orcid,
+  .author__urls .ai-orcid-square {
     color: $orcid-color;
   }
 
