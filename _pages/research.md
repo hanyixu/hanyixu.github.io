@@ -28,5 +28,4 @@ Grounded in Bowman's Interactivity-as-Demand framework and informed by Flow theo
 
 This study extends the Interactivity-as-Demand framework by demonstrating the compound nature of gameplay stressors and illustrates the value of computational methods for understanding player experience at scale.
 
-[Read the full thesis on Academic Commons](https://doi.org/10.7916/3mm4-3482)
 
