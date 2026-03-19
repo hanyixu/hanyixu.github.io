@@ -216,13 +216,8 @@
       vertical-align: middle;
 
       &:first-child {
-        font-weight: 300; /* Lato Light - same as sidebar name */
-        font-size: $type-size-3;
-        text-wrap: wrap;
-
         a {
           margin-left: 0;
-          font-weight: inherit;
         }
       }
 
