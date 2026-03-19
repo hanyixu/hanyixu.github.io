@@ -10,7 +10,6 @@ h1, h2, h3, h4, h5, h6, .page__title, .archive__item-title, .archive__item-title
   font-weight: 300 !important;
 }
 
-.greedy-nav .visible-links li:first-child a,
 .masthead__menu-item--lg a {
   font-weight: 300 !important; /* Lato Light - same as sidebar name below photo */
   font-size: 1.5em !important;
