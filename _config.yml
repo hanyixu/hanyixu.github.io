@@ -28,7 +28,7 @@ author:
   bio              : #bio
   location         : "Tallahassee, FL"
   employer         : "Florida State University"
-  uri              : "https://hanyixu.com"
+  uri              : #"https://hanyixu.com"
   email            : "hx26@fsu.edu" 
 
   # Academic websites

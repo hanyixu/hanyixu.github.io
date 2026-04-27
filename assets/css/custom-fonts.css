@@ -19,3 +19,14 @@ h1, h2, h3, h4, h5, h6, .page__title, .archive__item-title, .archive__item-title
 .sidebar h2, .sidebar h3, .sidebar h4, .sidebar h5, .sidebar h6 {
   font-weight: 300 !important;
 }
+
+/* Unify sidebar typography: keep the author name larger, but align nav + links
+   with the sidebar base text size (matches $type-size-6 = 0.875em). */
+.sidebar .nav__list {
+  font-size: 0.875em !important;
+}
+
+.sidebar .author__urls,
+.sidebar .author__urls a {
+  font-size: 0.875em !important;
+}
