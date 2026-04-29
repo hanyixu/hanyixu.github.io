@@ -1,0 +1,89 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <title>{{PAGE_TITLE}} - Hanyi Xu</title>
+    <meta name="description" content="PhD Student at Florida State University">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="cleartype" content="on">
+    <script>
+      document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+    </script>
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/academicons.min.css">
+    <link rel="stylesheet" href="./assets/css/custom-fonts.css">
+    <link rel="stylesheet" href="./assets/css/roboto-light-fonts.css">
+  </head>
+  <body>
+    <div class="masthead">
+      <div class="masthead__inner-wrap">
+        <div class="masthead__menu">
+          <nav id="site-nav" class="greedy-nav">
+            <button><div class="navicon"></div></button>
+            <ul class="visible-links">
+              <li class="masthead__menu-item"><a href="./index.html">Home</a></li>
+              <li class="masthead__menu-item"><a href="./research.html">Research</a></li>
+              <li class="masthead__menu-item"><a href="./publications.html">Publications</a></li>
+              <li class="masthead__menu-item"><a href="./cv.html">CV</a></li>
+            </ul>
+            <ul class="hidden-links hidden"></ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <div id="main" role="main">
+      <div class="sidebar sticky">
+        <div itemscope itemtype="http://schema.org/Person">
+          <div class="author__avatar">
+            <img src="./images/profile.png" class="author__avatar" alt="Hanyi Xu">
+          </div>
+
+          <div class="author__content">
+            <h3 class="author__name">Hanyi Xu</h3>
+            <p class="author__pronouns">He/Him/His</p>
+          </div>
+
+          <div class="author__urls-wrapper">
+            <button class="btn btn--inverse">Follow</button>
+            <ul class="author__urls social-icons">
+              <li class="author__desktop"><i class="fa-solid fa-location-dot icon-pad-right" aria-hidden="true"></i>Tallahassee, FL</li>
+              <li class="author__desktop"><i class="fas fa-fw fa-building-columns icon-pad-right" aria-hidden="true"></i>Florida State University</li>
+              <li><a href="mailto:hx26@fsu.edu"><i class="fas fa-fw fa-envelope icon-pad-right" aria-hidden="true"></i>Email</a></li>
+              <li><a href="https://orcid.org/0009-0002-0257-3630"><i class="ai ai-orcid ai-fw icon-pad-right"></i>ORCID</a></li>
+              <li><a href="https://github.com/hanyixu"><i class="fab fa-fw fa-github icon-pad-right" aria-hidden="true"></i>GitHub</a></li>
+              <li><a href="https://www.linkedin.com/in/xuhanyi"><i class="fab fa-fw fa-linkedin icon-pad-right" aria-hidden="true"></i>LinkedIn</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+        <meta itemprop="headline" content="{{PAGE_TITLE}}">
+        <meta itemprop="description" content="{{PAGE_EXCERPT}}">
+        <div class="page__inner-wrap">
+          <header>
+            <h1 class="page__title" itemprop="headline">{{PAGE_TITLE}}</h1>
+          </header>
+
+          <section class="page__content" itemprop="text">
+            {{PAGE_CONTENT}}
+          </section>
+
+          <footer class="page__meta"></footer>
+        </div>
+      </article>
+    </div>
+
+    <div class="page__footer">
+      <footer>
+        <div class="page__footer-copyright">
+          &copy; 2026Hanyi Xu<br>
+         Site last updated 2026-04-29</div>
+      </footer>
+    </div>
+
+    <script src="./assets/js/main.min.js"></script>
+  </body>
+</html>

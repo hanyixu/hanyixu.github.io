@@ -20,13 +20,26 @@ h1, h2, h3, h4, h5, h6, .page__title, .archive__item-title, .archive__item-title
   font-weight: 300 !important;
 }
 
-/* Unify sidebar typography: keep the author name larger, but align nav + links
-   with the sidebar base text size (matches $type-size-6 = 0.875em). */
+/* Unify sidebar and main text sizing.
+   Target size is the sidebar list size (0.875em of body).
+   Avoid nested font-size shrinkage inside author__urls links. */
 .sidebar .nav__list {
   font-size: 0.875em !important;
 }
 
-.sidebar .author__urls,
-.sidebar .author__urls a {
+.sidebar .author__urls {
+  font-size: 1em !important;
+}
+
+.sidebar .author__urls li {
   font-size: 0.875em !important;
+}
+
+.sidebar .author__urls a {
+  font-size: 1em !important;
+}
+
+.page__content {
+  font-size: 0.875em !important;
+  line-height: 1.6 !important;
 }
