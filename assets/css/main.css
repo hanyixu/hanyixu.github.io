@@ -66,8 +66,6 @@ audio,
 canvas,
 video {
   display: inline-block;
-  *display: inline;
-  *zoom: 1;
 }
 audio:not([controls]) {
   display: none;
@@ -94,7 +92,7 @@ sub {
 }
 img {
   max-width: 100%;
-  width: auto\9;
+  width: auto;
   height: auto;
   vertical-align: middle;
   border: 0;
@@ -114,7 +112,6 @@ textarea {
 }
 button,
 input {
-  *overflow: visible;
   line-height: normal;
 }
 button::-moz-focus-inner,
@@ -1453,7 +1450,7 @@ th {
   text-align: center;
   text-decoration: none;
   color: var(--global-text-color-light);
-  border: 1px solid var(var(--global-border-color));
+  border: 1px solid var(--global-border-color);
   border-radius: 0;
 }
 .pagination li a:hover {
@@ -1497,7 +1494,7 @@ th {
   text-align: center;
   text-decoration: none;
   color: var(--global-text-color-light);
-  border: 1px solid var(var(--global-border-color));
+  border: 1px solid var(--global-border-color);
   border-radius: 4px;
 }
 .pagination--pager:hover {
@@ -1790,7 +1787,7 @@ th {
   animation: intro 0.3s both;
   -webkit-animation-delay: 0.45s;
   animation-delay: 0.45s;
-  border-top: 1px solid var(var(--global-border-color));
+  border-top: 1px solid var(--global-border-color);
 }
 .page__footer::after {
   clear: both;
@@ -2127,7 +2124,6 @@ form legend {
   display: block;
   width: 100%;
   margin-bottom: 10px;
-  *margin-left: -7px;
   padding: 0;
   color: var(--global-text-color);
   border: 0;
@@ -2151,7 +2147,6 @@ button,
 select,
 textarea {
   vertical-align: baseline;
-  *vertical-align: middle;
 }
 input,
 button,
@@ -2212,18 +2207,15 @@ input[type="radio"] {
   height: auto;
   padding: 0;
   margin: 3px 0;
-  *margin-top: 0;
   line-height: normal;
   cursor: pointer;
   border-radius: 0;
-  border: 0 \9;
+  border: 0;
 }
 input[type="checkbox"],
 input[type="radio"] {
   box-sizing: border-box;
   padding: 0;
-  *width: 13px;
-  *height: 13px;
 }
 input[type="image"] {
   border: 0;
@@ -2244,11 +2236,9 @@ input[type="submit"] {
   width: auto;
   height: auto;
   cursor: pointer;
-  *overflow: visible;
 }
 select,
 input[type="file"] {
-  *margin-top: 4px;
 }
 select {
   width: auto;
@@ -2304,7 +2294,7 @@ input:focus,
 textarea:focus {
   border-color: var(--global-border-color);
   outline: 0;
-  outline: thin dotted \9;
+  outline: thin dotted;
 }
 input[type="file"]:focus,
 input[type="radio"]:focus,
