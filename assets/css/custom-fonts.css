@@ -1,12 +1,12 @@
 /* Lato only - Regular for body, Thin for headings and titles */
 
 body, p, div, span, a, li, td, th, input, textarea, button, .page__content, .page__lead, figcaption {
-  font-family: 'Lato', -apple-system, "Segoe UI", "Helvetica Neue", Arial, sans-serif !important;
+  font-family: -apple-system, "Segoe UI", "Helvetica Neue", Arial, sans-serif !important;
   font-weight: 400 !important;
 }
 
 h1, h2, h3, h4, h5, h6, .page__title, .archive__item-title, .archive__item-title a, .nav__title, .nav__sub-title {
-  font-family: 'Lato', -apple-system, "Segoe UI", "Helvetica Neue", Arial, sans-serif !important;
+  font-family: -apple-system, "Segoe UI", "Helvetica Neue", Arial, sans-serif !important;
   font-weight: 300 !important;
 }
 
