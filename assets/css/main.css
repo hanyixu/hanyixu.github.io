@@ -4004,7 +4004,7 @@ img.mfp-img {
   line-height: 1.4;
 }
 
-.photo-lab.is-clean .photo-lab-lightbox__caption {
+.photo-lab--clean .photo-lab-lightbox__caption {
   display: none;
 }
 
