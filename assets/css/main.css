@@ -603,6 +603,14 @@ body:hover .visually-hidden button {
   padding-right: 0.5em;
   margin-right: 0.5em;
 }
+
+/* Tighter spacing for inline link icons (e.g., "Link", "Slides"). */
+.link-inline-icon {
+  padding-right: 0.15em;
+  margin-right: 0.15em;
+  font-size: 0.8em;
+  vertical-align: -0.05em;
+}
 .social-icons .fa {
   color: #000;
 }
