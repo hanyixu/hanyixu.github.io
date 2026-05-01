@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1066" viewBox="0 0 1600 1066" role="img" aria-label="Photo placeholder">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f2f3f3"/>
+      <stop offset="100%" stop-color="#dfe3e6"/>
+    </linearGradient>
+    <pattern id="p" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M0 24 L24 0" stroke="#cfd5d9" stroke-width="1" opacity="0.35"/>
+    </pattern>
+  </defs>
+  <rect width="1600" height="1066" fill="url(#g)"/>
+  <rect width="1600" height="1066" fill="url(#p)"/>
+  <rect x="64" y="64" width="1472" height="938" rx="18" fill="none" stroke="#b9c0c4" stroke-width="3" opacity="0.8"/>
+  <g opacity="0.9" fill="#7a8288">
+    <path d="M650 700c-12 0-22-10-22-22V392c0-12 10-22 22-22h300c12 0 22 10 22 22v286c0 12-10 22-22 22H650zm22-44h256V414H672v242zm-44-286c0-24 20-44 44-44h256c24 0 44 20 44 44v286c0 24-20 44-44 44H672c-24 0-44-20-44-44V370z"/>
+    <circle cx="800" cy="535" r="62" fill="none" stroke="#7a8288" stroke-width="10"/>
+    <path d="M730 382l28-44h84l28 44" fill="none" stroke="#7a8288" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <text x="800" y="840" text-anchor="middle" font-family="Lato, Arial, sans-serif" font-size="44" fill="#7a8288" opacity="0.95">Photo Lab</text>
+  <text x="800" y="900" text-anchor="middle" font-family="Lato, Arial, sans-serif" font-size="26" fill="#7a8288" opacity="0.85">Replace placeholders with your photos</text>
+</svg>

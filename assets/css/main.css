@@ -3825,3 +3825,223 @@ img.mfp-img {
   right: 0;
   padding-top: 0;
 }
+
+/* --- Photo Lab (data-driven gallery) ------------------------------------ */
+.photo-lab .page__lead {
+  margin-top: -0.25em;
+  color: var(--global-text-color-light);
+  font-size: 1em;
+}
+
+.photo-lab__controls {
+  display: flex;
+  gap: 0.75em;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 1em 0 1.25em;
+}
+
+.photo-lab.is-clean .photo-lab__controls {
+  display: none;
+}
+
+.photo-lab__filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
+}
+
+.photo-lab__filter {
+  appearance: none;
+  border: 1px solid var(--global-border-color);
+  background: #fff;
+  color: var(--global-masthead-link-color);
+  border-radius: 999px;
+  padding: 0.35em 0.8em;
+  font-size: 0.875em;
+  line-height: 1.2;
+}
+
+.photo-lab__filter:hover {
+  border-color: var(--global-text-color-light);
+}
+
+.photo-lab__filter.is-active {
+  background: var(--global-base-color);
+  border-color: var(--global-base-color);
+  color: #fff;
+}
+
+.photo-lab__meta {
+  color: var(--global-text-color-light);
+  font-size: 0.875em;
+}
+
+.photo-lab__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 0.9em;
+}
+
+.photo-lab__tile {
+  text-align: left;
+  border: 1px solid var(--global-border-color);
+  border-radius: 10px;
+  background: #fff;
+  padding: 0;
+  overflow: hidden;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.06);
+}
+
+.photo-lab__tile:hover {
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+  transform: translateY(-2px);
+}
+
+.photo-lab__thumb {
+  display: block;
+  background: var(--global-border-color);
+  aspect-ratio: 3 / 2;
+  overflow: hidden;
+}
+
+.photo-lab__thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.photo-lab__info {
+  display: block;
+  padding: 0.75em 0.85em 0.85em;
+}
+
+.photo-lab.is-clean .photo-lab__info {
+  display: none;
+}
+
+.photo-lab.is-clean .photo-lab__tile:hover {
+  transform: none;
+}
+
+.photo-lab.is-clean .photo-lab__tile:hover .photo-lab__thumb img {
+  transform: scale(1.02);
+}
+
+.photo-lab__title {
+  display: block;
+  font-weight: 700;
+  font-size: 0.95em;
+  line-height: 1.35;
+  margin-bottom: 0.25em;
+  color: var(--global-text-color);
+}
+
+.photo-lab__sub {
+  display: block;
+  color: var(--global-text-color-light);
+  font-size: 0.85em;
+  line-height: 1.35;
+}
+
+.photo-lab__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35em;
+  margin-top: 0.6em;
+}
+
+.photo-lab__tag {
+  display: inline-block;
+  padding: 0.15em 0.5em;
+  border-radius: 999px;
+  border: 1px solid var(--global-border-color);
+  font-size: 0.75em;
+  color: var(--global-masthead-link-color);
+}
+
+.photo-lab__empty {
+  padding: 1em 0;
+  color: var(--global-text-color-light);
+}
+
+.photo-lab-lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.photo-lab-lightbox.hidden {
+  display: none;
+}
+
+.photo-lab-lightbox__figure {
+  margin: 0;
+  max-width: min(1100px, 95vw);
+  max-height: 90vh;
+  width: 100%;
+}
+
+.photo-lab-lightbox__img {
+  width: 100%;
+  max-height: 78vh;
+  object-fit: contain;
+  border-radius: 10px;
+  background: #111;
+}
+
+.photo-lab-lightbox__caption {
+  margin-top: 10px;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 0.9em;
+  line-height: 1.4;
+}
+
+.photo-lab.is-clean .photo-lab-lightbox__caption {
+  display: none;
+}
+
+.photo-lab-lightbox__close {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  width: 44px;
+  height: 44px;
+  border: 0;
+  background: transparent;
+  color: #fff;
+  font-size: 32px;
+  line-height: 44px;
+}
+
+.photo-lab-lightbox__nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 48px;
+  height: 64px;
+  border: 0;
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  font-size: 26px;
+  border-radius: 10px;
+}
+
+.photo-lab-lightbox__nav:hover {
+  background: rgba(255, 255, 255, 0.14);
+}
+
+.photo-lab-lightbox__prev {
+  left: 14px;
+}
+
+.photo-lab-lightbox__next {
+  right: 14px;
+}
