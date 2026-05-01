@@ -1,0 +1,20 @@
+# Hanyi Xu（个人学术主页）
+> Hanyi Xu 的个人学术主页，包含个人简介、研究兴趣、论文与报告列表，以及 CV 下载入口。
+
+## 重要页面（建议优先阅读）
+- [主页 / About Me](https://hanyixu.com/): 个人简介、研究方向概述，以及联系方式与外部主页链接（ORCID/GitHub/LinkedIn）。
+- [Research Interests](https://hanyixu.com/research.html): 研究兴趣与主题说明，并包含硕士论文《Why Games Stop Feeling Fun》与关键发现摘要。
+- [Publications & Presentations](https://hanyixu.com/publications.html): 论文与报告（manuscripts、presentations）条目列表，含 DOI 与部分 PDF/Slides 链接。
+- [CV](https://hanyixu.com/cv.html): 简历下载入口（PDF）。
+
+## 关键事实（Key Facts）
+- 身份：佛罗里达州立大学（Florida State University）传播学院 PhD 学生
+- 研究方向：媒体心理学、人机交互、计算社会科学；关注互动媒体/电子游戏对情绪与压力、动机与幸福感的影响
+- 代表性工作：硕士论文《Why Games Stop Feeling Fun: A Computational Approach to Emotional Demand in Play》（2026，Columbia University）
+
+## 联系方式（Contact）
+- 网站：https://hanyixu.com/
+- 邮箱：hx26@fsu.edu
+- ORCID：https://orcid.org/0009-0002-0257-3630
+- GitHub：https://github.com/hanyixu
+- LinkedIn：https://www.linkedin.com/in/xuhanyi
