@@ -38,7 +38,8 @@ The gallery script (`assets/js/photo-lab.js`) supports **inline JSON** embedded 
 
 Put the file here:
 
-- `assets/img/photo-lab/<your-file-name>.jpg`
+- Original (full size): `assets/img/photo-lab/full/<your-file-name>.jpg`
+- Thumbnail (auto-generated): `assets/img/photo-lab/thumbs/<your-file-stem>.jpg`
 
 Notes:
 - Use **web-friendly formats**: `.jpg`, `.jpeg`, `.png`, `.webp`
@@ -61,8 +62,8 @@ Use this template:
   "tags": [],
   "camera": "",
   "lens": "",
-  "thumb": "./assets/img/photo-lab/YOUR_FILE_NAME.JPG",
-  "src": "./assets/img/photo-lab/YOUR_FILE_NAME.JPG"
+  "thumb": "./assets/img/photo-lab/thumbs/YOUR_FILE_STEM.jpg",
+  "src": "./assets/img/photo-lab/full/YOUR_FILE_NAME.JPG"
 }
 ```
 
@@ -115,9 +116,38 @@ Checklist:
 ## Instructions for AI assistants (do this when asked to add photos)
 
 When the user says “add new photos”:
-- List the filenames inside `assets/img/photo-lab/`
+- List the filenames inside `assets/img/photo-lab/full/`
 - Update `assets/data/photo-lab.json` to include new files (relative paths)
 - If the user previews via `file://`, also sync the inline JSON in `photo-lab.html`
 - Do **not** reference local absolute paths like `/Users/...` in JSON
 - Prefer `.jpg/.jpeg/.png/.webp`; avoid `.HEIC` unless converted
 
+## Auto-generate thumbnails (macOS, built-in)
+
+This repo can generate thumbnails using macOS built-in `sips`.
+
+- Put originals into `assets/img/photo-lab/full/`
+- Generate thumbnails (width 1200px) into `assets/img/photo-lab/thumbs/`
+
+Example command (run at repo root):
+
+```bash
+mkdir -p assets/img/photo-lab/thumbs
+for f in assets/img/photo-lab/full/*.{jpg,JPG,jpeg,JPEG,png,PNG,webp,WEBP}; do
+  [ -f "$f" ] || continue
+  base="$(basename "$f")"
+  stem="${base%.*}"
+  sips -s format jpeg --resampleWidth 1200 "$f" --out "assets/img/photo-lab/thumbs/${stem}.jpg" >/dev/null
+done
+```
+
+把新原图放到：assets/img/photo-lab/full/
+
+AI工作流程：
+- 扫描 assets/img/photo-lab/full/ 找到新增的图片文件
+- 用 sips 批量生成/补齐缩略图到：assets/img/photo-lab/thumbs/（宽 1200px，输出 jpg，只生成缺的）
+- 更新 assets/data/photo-lab.json：
+- src → ./assets/img/photo-lab/full/<原图文件名>
+- thumb → ./assets/img/photo-lab/thumbs/<同名stem>.jpg
+- 同步 photo-lab.html 里的内嵌数据块（保证你双击 file:// 预览也能立刻看到）
+- 最后做一次快速校验：JSON 里引用的 thumb/src 文件都存在
