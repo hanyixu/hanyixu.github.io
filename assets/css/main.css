@@ -189,7 +189,7 @@ h6 {
     "Lucida Grande",
     Arial,
     sans-serif;
-  font-weight: 100;
+  font-weight: 300;
   font-style: normal;
 }
 h1 {
@@ -4047,73 +4047,9 @@ img.mfp-img {
 }
 
 /* =============================================================================
-   Self-hosted Lato (all UI text). Main page titles + author name: Light (300);
-   lead + in-article headings: Thin (100); research in-content h2 + Photo Lab lead: Light (300).
+   Lato @font-face lives in lato-fonts.css (single source; relative URLs).
+   Headings and page lead use Lato Light (300), not Thin.
    ============================================================================= */
-
-@font-face {
-  font-family: "Lato";
-  font-style: normal;
-  font-weight: 100;
-  font-display: swap;
-  src: url("/assets/fonts/Lato/Lato-Thin.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Lato";
-  font-style: italic;
-  font-weight: 100;
-  font-display: swap;
-  src: url("/assets/fonts/Lato/Lato-ThinItalic.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Lato";
-  font-style: normal;
-  font-weight: 300;
-  font-display: swap;
-  src: url("/assets/fonts/Lato/Lato-Light.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Lato";
-  font-style: italic;
-  font-weight: 300;
-  font-display: swap;
-  src: url("/assets/fonts/Lato/Lato-LightItalic.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Lato";
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url("/assets/fonts/Lato/Lato-Regular.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Lato";
-  font-style: italic;
-  font-weight: 400;
-  font-display: swap;
-  src: url("/assets/fonts/Lato/Lato-Italic.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Lato";
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url("/assets/fonts/Lato/Lato-Bold.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Lato";
-  font-style: italic;
-  font-weight: 700;
-  font-display: swap;
-  src: url("/assets/fonts/Lato/Lato-BoldItalic.ttf") format("truetype");
-}
 
 :root {
   --site-font-sans:
@@ -4160,14 +4096,9 @@ figcaption,
   font-weight: 400 !important;
 }
 
-/* Main page title + sidebar name: Lato Light (300) */
+/* Page title, sidebar name, lead, in-article headings: Lato Light (300) */
 article.page .page__title,
-.sidebar .author__name {
-  font-family: var(--site-font-sans) !important;
-  font-weight: 300 !important;
-}
-
-/* Lead + in-article headings: Lato Thin */
+.sidebar .author__name,
 article.page .page__lead,
 article.page .page__inner-wrap .page__content h1,
 article.page .page__inner-wrap .page__content h2,
@@ -4176,16 +4107,6 @@ article.page .page__inner-wrap .page__content h4,
 article.page .page__inner-wrap .page__content h5,
 article.page .page__inner-wrap .page__content h6 {
   font-family: var(--site-font-sans) !important;
-  font-weight: 100 !important;
-}
-
-/* Research: "Master's Thesis" (and any other in-content h2) → Lato Light */
-article.page-research .page__inner-wrap .page__content h2 {
-  font-weight: 300 !important;
-}
-
-/* Photo Lab: intro line under page title → Lato Light */
-article.photo-lab .page__lead {
   font-weight: 300 !important;
 }
 
@@ -4275,7 +4196,7 @@ article.page-publications .pub-title {
 
 .pub-year {
   font-family: var(--site-font-sans) !important;
-  font-weight: 100 !important;
+  font-weight: 300 !important;
   color: var(--global-text-color) !important;
 }
 

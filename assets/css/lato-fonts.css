@@ -1,20 +1,4 @@
-/* Lato font faces */
-@font-face {
-  font-family: 'Lato';
-  src: url('../fonts/Lato/Lato-Thin.ttf') format('truetype');
-  font-weight: 100;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Lato';
-  src: url('../fonts/Lato/Lato-ThinItalic.ttf') format('truetype');
-  font-weight: 100;
-  font-style: italic;
-  font-display: swap;
-}
-
+/* Lato font faces (no Thin/100 — headings use Light/300) */
 @font-face {
   font-family: 'Lato';
   src: url('../fonts/Lato/Lato-Light.ttf') format('truetype');
