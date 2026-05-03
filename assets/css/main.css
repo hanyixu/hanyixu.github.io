@@ -4048,7 +4048,7 @@ img.mfp-img {
 
 /* =============================================================================
    Self-hosted Lato (all UI text). Main page titles + author name: Light (300);
-   lead + in-article headings: Thin (100).
+   lead + in-article headings: Thin (100); research in-content h2 + Photo Lab lead: Light (300).
    ============================================================================= */
 
 @font-face {
@@ -4177,6 +4177,16 @@ article.page .page__inner-wrap .page__content h5,
 article.page .page__inner-wrap .page__content h6 {
   font-family: var(--site-font-sans) !important;
   font-weight: 100 !important;
+}
+
+/* Research: "Master's Thesis" (and any other in-content h2) → Lato Light */
+article.page-research .page__inner-wrap .page__content h2 {
+  font-weight: 300 !important;
+}
+
+/* Photo Lab: intro line under page title → Lato Light */
+article.photo-lab .page__lead {
+  font-weight: 300 !important;
 }
 
 .archive__item-title,
