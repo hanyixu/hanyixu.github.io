@@ -2,8 +2,8 @@
 <html lang="en" class="no-js">
   <head>
     <meta charset="utf-8">
-    <title>CV - Hanyi Xu</title>
-    <meta name="description" content="PhD Student at Florida State University">
+    <title data-page-title="CV">CV - Hanyi Xu</title>
+    <meta name="description" content="PhD Student at Florida State University" data-site-content="site.defaultMetaDescription">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="cleartype" content="on">
     <script>
@@ -13,6 +13,81 @@
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="./assets/css/academicons.min.css">
     <link rel="stylesheet" href="./assets/css/custom-fonts.css">
+    <style>
+      .cv-download-wrap {
+        position: relative;
+        display: inline-block;
+        margin: 0 0 1.25rem;
+      }
+      .cv-file-info {
+        position: absolute;
+        left: 50%;
+        top: 100%;
+        transform: translateX(-50%);
+        margin-top: 0.45rem;
+        padding: 0.55rem 0.7rem;
+        min-width: 12rem;
+        max-width: min(20rem, 92vw);
+        font-size: 0.72rem;
+        line-height: 1.45;
+        color: #555 !important;
+        text-align: left;
+        font-weight: 400;
+        background: #fff;
+        border: 1px solid #cfd3d6;
+        border-radius: 6px;
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+        z-index: 30;
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transition:
+          opacity 0.12s ease,
+          visibility 0.12s ease;
+      }
+      .cv-download-wrap:hover .cv-file-info,
+      .cv-download-wrap:focus-within .cv-file-info {
+        opacity: 1;
+        visibility: visible;
+      }
+      a.btn.cv-download {
+        display: inline-block;
+        width: auto;
+        margin: 0;
+        padding: 0.5em 1em;
+        font-size: 0.875em;
+        line-height: 1.3;
+        color: #111 !important;
+        background-color: #fff !important;
+        border: 1px solid #111 !important;
+        border-radius: 4px;
+      }
+      a.btn.cv-download:hover {
+        color: #fff !important;
+        background-color: #111 !important;
+        border-color: #111 !important;
+      }
+      .cv-download .fa-fw {
+        margin-right: 0.5em;
+      }
+      .cv-supplement {
+        margin: 0;
+        max-width: 5.5rem;
+      }
+      .cv-supplement img {
+        display: block;
+        width: 100%;
+        max-width: 5.5rem;
+        height: auto;
+        border-radius: 4px;
+      }
+      .cv-supplement figcaption {
+        margin-top: 0.45em;
+        font-size: 0.7rem;
+        line-height: 1.25;
+        color: var(--global-fig-caption-color, #777a7d);
+      }
+    </style>
       </head>
   <body>
     <div class="masthead">
@@ -37,23 +112,23 @@
       <div class="sidebar sticky">
         <div itemscope itemtype="http://schema.org/Person">
           <div class="author__avatar">
-            <img src="./images/profile.jpeg" class="author__avatar" alt="Hanyi Xu">
+            <img src="./images/profile.jpeg" class="author__avatar" alt="Hanyi Xu" data-site-src="profiles.avatarPath" data-site-alt="profiles.avatarAlt">
           </div>
 
           <div class="author__content">
-            <h3 class="author__name">Hanyi Xu</h3>
-            <p class="author__pronouns">He/Him/His</p>
+            <h3 class="author__name" data-site-text="person.displayName">Hanyi Xu</h3>
+            <p class="author__pronouns" data-site-text="person.pronouns">He/Him/His</p>
           </div>
 
           <div class="author__urls-wrapper">
             <button class="btn btn--inverse">Follow</button>
             <ul class="author__urls social-icons">
-              <li class="author__desktop"><i class="fa-solid fa-location-dot icon-pad-right" aria-hidden="true"></i>Ningbo, China</li>
-              <li class="author__desktop"><i class="fas fa-fw fa-building-columns icon-pad-right" aria-hidden="true"></i>Florida State University</li>
-              <li><a href="mailto:hx26@fsu.edu"><i class="fas fa-fw fa-envelope icon-pad-right" aria-hidden="true"></i>Email</a></li>
-              <li><a href="https://orcid.org/0009-0002-0257-3630"><i class="ai ai-orcid ai-fw icon-pad-right"></i>ORCID</a></li>
-              <li><a href="https://github.com/hanyixu"><i class="fab fa-fw fa-github icon-pad-right" aria-hidden="true"></i>GitHub</a></li>
-              <li><a href="https://www.linkedin.com/in/xuhanyi"><i class="fab fa-fw fa-linkedin icon-pad-right" aria-hidden="true"></i>LinkedIn</a></li>
+              <li class="author__desktop"><i class="fa-solid fa-location-dot icon-pad-right" aria-hidden="true"></i><span data-site-text="person.location">Ningbo, China</span></li>
+              <li class="author__desktop"><i class="fas fa-fw fa-building-columns icon-pad-right" aria-hidden="true"></i><span data-site-text="person.affiliation">Florida State University</span></li>
+              <li><a href="mailto:hx26@fsu.edu" data-site-email="links.email"><i class="fas fa-fw fa-envelope icon-pad-right" aria-hidden="true"></i>Email</a></li>
+              <li><a href="https://orcid.org/0009-0002-0257-3630" data-site-href="links.orcid"><i class="ai ai-orcid ai-fw icon-pad-right"></i>ORCID</a></li>
+              <li><a href="https://github.com/hanyixu" data-site-href="links.github"><i class="fab fa-fw fa-github icon-pad-right" aria-hidden="true"></i>GitHub</a></li>
+              <li><a href="https://www.linkedin.com/in/xuhanyi" data-site-href="links.linkedin"><i class="fab fa-fw fa-linkedin icon-pad-right" aria-hidden="true"></i>LinkedIn</a></li>
             </ul>
           </div>
         </div>
@@ -68,7 +143,14 @@
           </header>
 
           <section class="page__content" itemprop="text">
-            <p><a href="./files/CV_HanyiXu.pdf"><i class="fas fa-link link-inline-icon" aria-hidden="true"></i>Link</a></p>
+            <p class="cv-download-wrap">
+              <a href="./files/CV_HanyiXu.pdf" class="btn cv-download" data-site-cv-download aria-describedby="cv-file-tooltip"><i class="fas fa-fw fa-file-pdf" aria-hidden="true"></i>Download CV (PDF)</a>
+              <span class="cv-file-info" id="cv-file-tooltip" role="tooltip" data-cv-tooltip></span>
+            </p>
+            <!-- <figure class="cv-supplement">
+              <img src="./assets/img/profile-2.jpg" width="384" height="512" alt="Hanyi Xu — additional portrait">
+              <figcaption>补充肖像 / Additional portrait.</figcaption>
+            </figure> -->
           </section>
 
           <footer class="page__meta"></footer>
@@ -79,11 +161,13 @@
     <div class="page__footer">
       <footer>
         <div class="page__footer-copyright">
-          &copy; 2026 Hanyi Xu<br>
-         Site last updated May 2026</div>
+          <span data-site-footer-copyright></span><br>
+          <span data-site-footer-updated></span>
+        </div>
       </footer>
     </div>
 
+    <script src="./assets/js/apply-site-config.js"></script>
     <script src="./assets/js/main.min.js"></script>
   </body>
 </html>
