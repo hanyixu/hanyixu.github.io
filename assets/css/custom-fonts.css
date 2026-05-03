@@ -64,3 +64,12 @@ textarea:focus:not(:focus-visible),
 select:focus:not(:focus-visible) {
   outline: none !important;
 }
+
+/* Index: full-width banner above About content */
+.page--home .page__hero {
+  border-radius: 4px;
+  overflow: hidden;
+}
+.page--home .page__hero-image {
+  display: block;
+}
