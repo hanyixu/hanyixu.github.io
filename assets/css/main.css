@@ -4045,3 +4045,285 @@ img.mfp-img {
 .photo-lab-lightbox__next {
   right: 14px;
 }
+
+/* =============================================================================
+   Self-hosted Lato (all UI text). Titles use Lato Thin (font-weight: 100).
+   ============================================================================= */
+
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url("/assets/fonts/Lato/Lato-Thin.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Lato";
+  font-style: italic;
+  font-weight: 100;
+  font-display: swap;
+  src: url("/assets/fonts/Lato/Lato-ThinItalic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("/assets/fonts/Lato/Lato-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Lato";
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: url("/assets/fonts/Lato/Lato-LightItalic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/fonts/Lato/Lato-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Lato";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/fonts/Lato/Lato-Italic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/fonts/Lato/Lato-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Lato";
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/fonts/Lato/Lato-BoldItalic.ttf") format("truetype");
+}
+
+:root {
+  --site-font-sans:
+    "Lato",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    "Helvetica Neue",
+    "PingFang SC",
+    "Hiragino Sans GB",
+    "Microsoft YaHei",
+    Arial,
+    sans-serif;
+}
+
+html {
+  font-family: var(--site-font-sans) !important;
+}
+
+body,
+body *:not(.ai):not(.fas):not(.fab):not(.far):not(.fal):not(.fa-solid):not(.fa-regular):not(.fa-brands):not(.fa):not(pre):not(code):not(kbd):not(samp):not(.highlight) {
+  font-family: var(--site-font-sans) !important;
+}
+
+body,
+p,
+div,
+span,
+a,
+li,
+td,
+th,
+input,
+textarea,
+select,
+button,
+.page__content,
+.page__lead,
+figcaption,
+.masthead,
+.page__footer,
+.btn,
+#goog-wm-sb {
+  font-weight: 400 !important;
+}
+
+/* Page + section titles: Lato Thin */
+article.page .page__title,
+article.page .page__lead,
+article.page .page__inner-wrap .page__content h1,
+article.page .page__inner-wrap .page__content h2,
+article.page .page__inner-wrap .page__content h3,
+article.page .page__inner-wrap .page__content h4,
+article.page .page__inner-wrap .page__content h5,
+article.page .page__inner-wrap .page__content h6,
+.sidebar .author__name {
+  font-family: var(--site-font-sans) !important;
+  font-weight: 100 !important;
+}
+
+.archive__item-title,
+.archive__item-title a,
+.nav__title,
+.nav__sub-title {
+  font-family: var(--site-font-sans) !important;
+  font-weight: 400 !important;
+}
+
+strong,
+b {
+  font-weight: 700 !important;
+}
+
+.masthead__menu-item--lg a {
+  font-weight: 400 !important;
+  font-size: 1.5em !important;
+}
+
+/* Top navigation: Lato Regular (same as body) */
+.masthead .greedy-nav a,
+.masthead .masthead__menu-item a {
+  font-family: var(--site-font-sans) !important;
+  font-weight: 400 !important;
+}
+
+.masthead .masthead__menu-item--lg {
+  font-weight: 400 !important;
+}
+
+.sidebar .author__pronouns,
+.sidebar .author__urls,
+.sidebar .author__urls li,
+.sidebar .author__urls a,
+.sidebar .author__urls span {
+  font-family: var(--site-font-sans) !important;
+  font-weight: 400 !important;
+}
+
+.sidebar .nav__list {
+  font-size: 0.875em !important;
+}
+
+.sidebar .author__urls {
+  font-size: 1em !important;
+}
+
+.sidebar .author__urls li {
+  font-size: 0.875em !important;
+}
+
+.sidebar .author__urls a {
+  font-size: 1em !important;
+}
+
+.page__content {
+  font-size: 0.875em !important;
+  line-height: 1.6 !important;
+}
+
+/* Publications list */
+.pub-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1.2rem;
+}
+
+.pub-left {
+  flex: 1 1 auto;
+  min-width: 0;
+  max-width: 80%;
+}
+
+article.page-publications .page__inner-wrap .page__content > h2 {
+  font-family: var(--site-font-sans) !important;
+  font-weight: 400 !important;
+}
+
+article.page-publications .pub-title {
+  font-family: var(--site-font-sans) !important;
+  font-weight: 400 !important;
+  color: var(--global-text-color) !important;
+}
+
+.pub-year {
+  font-family: var(--site-font-sans) !important;
+  font-weight: 100 !important;
+  color: var(--global-text-color) !important;
+}
+
+.pub-authors {
+  margin-top: 0.2rem;
+  margin-bottom: 0.2rem;
+  font-family: var(--site-font-sans) !important;
+  font-weight: 400 !important;
+  color: var(--global-text-color) !important;
+}
+
+.pub-item strong,
+.pub-item b {
+  font-weight: 400 !important;
+}
+
+.pub-meta {
+  font-family: var(--site-font-sans) !important;
+  font-weight: 300 !important;
+  color: #666666 !important;
+  font-size: 0.9em !important;
+  line-height: 1.5 !important;
+}
+
+.pub-year {
+  flex: 0 0 auto;
+  white-space: nowrap;
+  margin-left: 1rem;
+}
+
+.pub-meta + div {
+  margin-top: 0.35rem;
+}
+
+.pub-item .pub-left a {
+  font-family: var(--site-font-sans) !important;
+  font-weight: 400 !important;
+  text-decoration: underline !important;
+}
+
+a:focus,
+button:focus,
+[role="button"]:focus,
+input:focus,
+textarea:focus,
+select:focus {
+  outline: 2px solid var(--global-link-color) !important;
+  outline-offset: 2px !important;
+}
+
+a:focus:not(:focus-visible),
+button:focus:not(:focus-visible),
+[role="button"]:focus:not(:focus-visible),
+input:focus:not(:focus-visible),
+textarea:focus:not(:focus-visible),
+select:focus:not(:focus-visible) {
+  outline: none !important;
+}
+
+.page--home .page__hero {
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.page--home .page__hero-image {
+  display: block;
+}
