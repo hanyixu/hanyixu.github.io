@@ -1,22 +1,72 @@
-/* Lato only - Regular for body, Thin for headings and titles */
+/* Lato via Google Fonts (linked in HTML). Regular 400 = body; Light 300 = headings. */
 
-body, p, div, span, a, li, td, th, input, textarea, button, .page__content, .page__lead, figcaption {
-  font-family: -apple-system, "Segoe UI", "Helvetica Neue", Arial, sans-serif !important;
+:root {
+  --site-font-sans: "Lato", -apple-system, "Helvetica Neue", Arial, sans-serif;
+}
+
+html {
+  font-family: var(--site-font-sans) !important;
+}
+
+/* Sitewide sans: keep Font Awesome / Academicons / code blocks on their own fonts */
+body,
+body *:not(.ai):not(.fas):not(.fab):not(.far):not(.fal):not(.fa-solid):not(.fa-regular):not(.fa-brands):not(.fa):not(pre):not(code):not(kbd):not(samp):not(.highlight) {
+  font-family: var(--site-font-sans) !important;
+}
+
+body,
+p,
+div,
+span,
+a,
+li,
+td,
+th,
+input,
+textarea,
+select,
+button,
+.page__content,
+.page__lead,
+figcaption,
+.masthead,
+.page__footer,
+.btn,
+#goog-wm-sb {
   font-weight: 400 !important;
 }
 
-h1, h2, h3, h4, h5, h6, .page__title, .archive__item-title, .archive__item-title a, .nav__title, .nav__sub-title {
-  font-family: -apple-system, "Segoe UI", "Helvetica Neue", Arial, sans-serif !important;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.page__title,
+.archive__item-title,
+.archive__item-title a,
+.nav__title,
+.nav__sub-title,
+.sidebar .author__name {
+  font-family: var(--site-font-sans) !important;
   font-weight: 300 !important;
 }
 
+strong,
+b {
+  font-weight: 700 !important;
+}
+
 .masthead__menu-item--lg a {
-  font-weight: 300 !important; /* Lato Light - same as sidebar name below photo */
+  font-weight: 300 !important;
   font-size: 1.5em !important;
 }
 
-.sidebar .author__name,
-.sidebar h2, .sidebar h3, .sidebar h4, .sidebar h5, .sidebar h6 {
+.sidebar h2,
+.sidebar h3,
+.sidebar h4,
+.sidebar h5,
+.sidebar h6 {
   font-weight: 300 !important;
 }
 
@@ -42,6 +92,12 @@ h1, h2, h3, h4, h5, h6, .page__title, .archive__item-title, .archive__item-title
 .page__content {
   font-size: 0.875em !important;
   line-height: 1.6 !important;
+}
+
+/* Publication list titles (div.pub-title), match heading weight */
+.pub-title {
+  font-family: var(--site-font-sans) !important;
+  font-weight: 300 !important;
 }
 
 /* Replace the default orange focus ring from main.css.
