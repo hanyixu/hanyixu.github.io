@@ -4047,7 +4047,8 @@ img.mfp-img {
 }
 
 /* =============================================================================
-   Self-hosted Lato (all UI text). Titles use Lato Thin (font-weight: 100).
+   Self-hosted Lato (all UI text). Main page titles + author name: Light (300);
+   lead + in-article headings: Thin (100).
    ============================================================================= */
 
 @font-face {
@@ -4159,16 +4160,21 @@ figcaption,
   font-weight: 400 !important;
 }
 
-/* Page + section titles: Lato Thin */
+/* Main page title + sidebar name: Lato Light (300) */
 article.page .page__title,
+.sidebar .author__name {
+  font-family: var(--site-font-sans) !important;
+  font-weight: 300 !important;
+}
+
+/* Lead + in-article headings: Lato Thin */
 article.page .page__lead,
 article.page .page__inner-wrap .page__content h1,
 article.page .page__inner-wrap .page__content h2,
 article.page .page__inner-wrap .page__content h3,
 article.page .page__inner-wrap .page__content h4,
 article.page .page__inner-wrap .page__content h5,
-article.page .page__inner-wrap .page__content h6,
-.sidebar .author__name {
+article.page .page__inner-wrap .page__content h6 {
   font-family: var(--site-font-sans) !important;
   font-weight: 100 !important;
 }
