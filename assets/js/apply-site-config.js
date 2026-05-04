@@ -47,7 +47,9 @@
   }
 
   function apply(cfg) {
-    if (!cfg) return;
+    if (!cfg) {
+      return;
+    }
 
     document.querySelectorAll('[data-site-text]').forEach(function (el) {
       var v = get(cfg, el.getAttribute('data-site-text'));
@@ -129,5 +131,18 @@
     }
   }
 
-  apply(loadConfigSync());
+  var synced = loadConfigSync();
+  if (synced) {
+    apply(synced);
+  } else if (typeof fetch === 'function') {
+    fetch(configUrl(), { credentials: 'same-origin' })
+      .then(function (r) {
+        if (!r.ok) {
+          throw new Error('config fetch ' + r.status);
+        }
+        return r.json();
+      })
+      .then(apply)
+      .catch(function () {});
+  }
 })();

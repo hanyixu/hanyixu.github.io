@@ -18,41 +18,24 @@
     <link rel="stylesheet" href="./assets/css/main.css?v=20260503">
     <link rel="stylesheet" href="./assets/css/academicons.min.css">
     <style>
+      /* File meta is always visible (hover-only popovers fail on touch and when config XHR fails). */
       .cv-download-wrap {
-        position: relative;
-        display: inline-block;
         margin: 0 0 1.25rem;
       }
       .cv-file-info {
-        position: absolute;
-        left: 50%;
-        top: 100%;
-        transform: translateX(-50%);
-        margin-top: 0.45rem;
-        padding: 0.55rem 0.7rem;
-        min-width: 12rem;
-        max-width: min(20rem, 92vw);
+        display: block;
+        margin-top: 0.65rem;
+        padding: 0.55rem 0.75rem;
+        max-width: min(22rem, 100%);
         font-size: 0.72rem;
         line-height: 1.45;
         color: #555 !important;
         text-align: left;
         font-weight: 400;
-        background: #fff;
-        border: 1px solid #cfd3d6;
+        background: #f9fafb;
+        border: 1px solid #e3e5e7;
         border-radius: 6px;
-        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
-        z-index: 30;
-        opacity: 0;
-        visibility: hidden;
-        pointer-events: none;
-        transition:
-          opacity 0.12s ease,
-          visibility 0.12s ease;
-      }
-      .cv-download-wrap:hover .cv-file-info,
-      .cv-download-wrap:focus-within .cv-file-info {
-        opacity: 1;
-        visibility: visible;
+        box-sizing: border-box;
       }
       a.btn.cv-download {
         display: inline-block;
@@ -149,7 +132,7 @@
           <section class="page__content" itemprop="text">
             <p class="cv-download-wrap">
               <a href="./files/CV_HanyiXu.pdf" class="btn cv-download" data-site-cv-download aria-describedby="cv-file-tooltip"><i class="fas fa-fw fa-file-pdf" aria-hidden="true"></i>Download CV (PDF)</a>
-              <span class="cv-file-info" id="cv-file-tooltip" role="tooltip" data-cv-tooltip></span>
+              <span class="cv-file-info" id="cv-file-tooltip" data-cv-tooltip>File name: CV_HanyiXu.pdf<br>Last updated: 2026-05<br>File size: 68KB<br>File type: PDF</span>
             </p>
             <!-- <figure class="cv-supplement">
               <img src="./assets/img/profile-2.jpg" width="384" height="512" alt="Hanyi Xu — additional portrait">
