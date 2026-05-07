@@ -127,17 +127,18 @@ When the user says “add new photos”:
 This repo can generate thumbnails using macOS built-in `sips`.
 
 - Put originals into `assets/img/photo-lab/full/`
-- Generate thumbnails (width 1200px) into `assets/img/photo-lab/thumbs/`
+- Generate thumbnails (width 800px) into `assets/img/photo-lab/thumbs/`
 
 Example command (run at repo root):
 
 ```bash
 mkdir -p assets/img/photo-lab/thumbs
-for f in assets/img/photo-lab/full/*.{jpg,JPG,jpeg,JPEG,png,PNG,webp,WEBP}; do
+shopt -s nullglob nocaseglob
+for f in assets/img/photo-lab/full/*.{jpg,jpeg,png,webp}; do
   [ -f "$f" ] || continue
   base="$(basename "$f")"
   stem="${base%.*}"
-  sips -s format jpeg --resampleWidth 1200 "$f" --out "assets/img/photo-lab/thumbs/${stem}.jpg" >/dev/null
+  sips -s format jpeg --resampleWidth 800 "$f" --out "assets/img/photo-lab/thumbs/${stem}.jpg" >/dev/null
 done
 ```
 
@@ -145,7 +146,7 @@ done
 
 AI工作流程：
 - 扫描 assets/img/photo-lab/full/ 找到新增的图片文件
-- 用 sips 批量生成/补齐缩略图到：assets/img/photo-lab/thumbs/（宽 1200px，输出 jpg，只生成缺的）
+- 用 sips 批量生成缩略图到：assets/img/photo-lab/thumbs/（宽 800px，输出 jpg，覆盖同名文件）
 - 更新 assets/data/photo-lab.json：
 - src → ./assets/img/photo-lab/full/<原图文件名>
 - thumb → ./assets/img/photo-lab/thumbs/<同名stem>.jpg
