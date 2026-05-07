@@ -104,9 +104,6 @@
     var eduEl = document.querySelector('[data-site-block="education"]');
     if (eduEl) setLinesWithBreaks(eduEl, get(cfg, 'about.educationLines'));
 
-    var contactEl = document.querySelector('[data-site-block="contact"]');
-    if (contactEl) setLinesWithBreaks(contactEl, get(cfg, 'about.contactLines'));
-
     var cvLink = document.querySelector('[data-site-cv-download]');
     if (cvLink) {
       var cvPath = get(cfg, 'cv.filePath');
