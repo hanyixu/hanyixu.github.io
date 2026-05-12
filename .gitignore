@@ -13,3 +13,4 @@ Gemfile.lock
 node_modules
 package-lock.json
 CLAUDE.md
+.claude/worktrees/jolly-dirac-b1699a/
