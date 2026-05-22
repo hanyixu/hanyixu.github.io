@@ -3222,11 +3222,7 @@ select:focus {
     display: inline-block;
     width: auto;
     height: auto;
-    padding: 2px;
     margin: 10px 0 12px 0;
-    border: 1px solid #b8bcc0;
-    border-radius: 8px;
-    box-sizing: border-box;
     line-height: 0;
     vertical-align: top;
   }
@@ -3245,6 +3241,27 @@ select:focus {
     max-width: 155px;
     height: auto;
     margin: 0;
+    border-radius: 12px;
+    box-shadow:
+      0 1px 2px rgba(0, 0, 0, 0.04),
+      0 8px 24px rgba(0, 0, 0, 0.08);
+    transition:
+      transform 0.3s cubic-bezier(0.22, 1, 0.36, 1),
+      box-shadow 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  .sidebar .author__avatar img:hover {
+    transform: translateY(-2px);
+    box-shadow:
+      0 2px 4px rgba(0, 0, 0, 0.05),
+      0 14px 32px rgba(0, 0, 0, 0.12);
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .sidebar .author__avatar img {
+      transition: none;
+    }
+    .sidebar .author__avatar img:hover {
+      transform: none;
+    }
   }
   .sidebar .author__content {
     padding-left: 0;
