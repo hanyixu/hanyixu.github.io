@@ -4285,3 +4285,25 @@ select:focus:not(:focus-visible) {
 .page--home .page__hero-image {
   display: block;
 }
+
+.js [data-reveal] {
+  opacity: 0;
+  transform: translateY(8px);
+  transition:
+    opacity 0.6s cubic-bezier(0.22, 1, 0.36, 1) var(--reveal-delay, 0s),
+    transform 0.6s cubic-bezier(0.22, 1, 0.36, 1) var(--reveal-delay, 0s);
+  will-change: opacity, transform;
+}
+
+.js [data-reveal].is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .js [data-reveal] {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
