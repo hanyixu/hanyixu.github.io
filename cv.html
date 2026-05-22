@@ -15,18 +15,23 @@
     <link rel="preload" href="./assets/fonts/Lato/Lato-Regular.ttf" as="font" type="font/ttf" crossorigin>
     <link rel="stylesheet" href="./assets/css/lato-fonts.css?v=20260503">
     <link rel="stylesheet" href="./assets/css/fontawesome-all.min.css">
-    <link rel="stylesheet" href="./assets/css/main.css?v=20260503">
+    <link rel="stylesheet" href="./assets/css/main.css?v=20260532">
     <link rel="stylesheet" href="./assets/css/academicons.min.css">
     <style>
-      /* File meta is always visible (hover-only popovers fail on touch and when config XHR fails). */
       .cv-download-wrap {
+        position: relative;
+        display: inline-block;
         margin: 0 0 1.25rem;
       }
       .cv-file-info {
+        position: absolute;
+        top: calc(100% + 0.5rem);
+        left: 0;
+        z-index: 20;
         display: block;
-        margin-top: 0.65rem;
         padding: 0.55rem 0.75rem;
-        max-width: min(22rem, 100%);
+        width: max-content;
+        max-width: min(22rem, 90vw);
         font-size: 0.72rem;
         line-height: 1.45;
         color: #555 !important;
@@ -35,7 +40,19 @@
         background: #f9fafb;
         border: 1px solid #e3e5e7;
         border-radius: 6px;
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
         box-sizing: border-box;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-4px);
+        transition: opacity 0.15s ease, transform 0.15s ease, visibility 0.15s ease;
+        pointer-events: none;
+      }
+      .cv-download-wrap:hover .cv-file-info,
+      .cv-download-wrap:focus-within .cv-file-info {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
       }
       a.btn.cv-download {
         display: inline-block;
