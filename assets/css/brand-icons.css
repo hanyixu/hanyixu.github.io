@@ -1,0 +1,54 @@
+/* Academicons — ORCID (SIL OFL 1.1) */
+@font-face {
+  font-family: "Academicons";
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src:
+    url("../fonts/academicons.woff") format("woff"),
+    url("../fonts/academicons.ttf") format("truetype");
+}
+
+.ai {
+  font-family: "Academicons";
+  font-weight: 400;
+  font-style: normal;
+  display: inline-block;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+
+.ai-orcid::before {
+  content: "\e9d9";
+}
+
+/* Font Awesome Brands — GitHub, LinkedIn (SIL OFL 1.1) */
+@font-face {
+  font-family: "Font Awesome 7 Brands";
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url("../webfonts/fa-brands-400.woff2") format("woff2");
+}
+
+.fa-brands {
+  font-family: "Font Awesome 7 Brands";
+  font-weight: 400;
+  font-style: normal;
+  display: inline-block;
+  line-height: 1;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+}
+
+.fa-brands::before {
+  content: var(--fa);
+}
+
+.fa-github {
+  --fa: "\f09b";
+}
+
+.fa-linkedin {
+  --fa: "\f08c";
+}

@@ -106,17 +106,18 @@
       var edu = get(cfg, 'about.education');
       if (edu && edu.length) {
         eduEl.textContent = '';
-        eduEl.className = 'education-grid';
+        eduEl.className = 'education-plates';
         edu.forEach(function (item) {
-          var card = document.createElement('div');
-          card.className = 'card education-card';
-          card.innerHTML =
-            '<div class="card__row">' +
-            '<span class="material-symbols-outlined card__icon" aria-hidden="true">school</span>' +
-            '<div><h3 class="card__title"></h3><p class="card__subtitle"></p></div></div>';
-          card.querySelector('.card__title').textContent = item.school || '';
-          card.querySelector('.card__subtitle').textContent = item.degree || '';
-          eduEl.appendChild(card);
+          var plate = document.createElement('div');
+          plate.className = 'education-plate';
+          var school = item.school || '';
+          var degree = item.degree || item.label || '';
+          var text = degree ? school + ' ｜ ' + degree : school || degree;
+          plate.innerHTML =
+            '<span class="material-symbols-outlined" aria-hidden="true">school</span>' +
+            '<span class="education-plate__text"></span>';
+          plate.querySelector('.education-plate__text').textContent = text;
+          eduEl.appendChild(plate);
         });
       } else {
         setLinesWithBreaks(eduEl, get(cfg, 'about.educationLines'));

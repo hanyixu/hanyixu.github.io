@@ -316,6 +316,12 @@ a:hover {
 /* Main */
 .site-main {
   flex: 1;
+  min-width: 0;
+  overflow-x: clip;
+}
+
+.home-grid > * {
+  min-width: 0;
 }
 
 .site-main--home {
@@ -418,9 +424,14 @@ a:hover {
   text-decoration: underline;
 }
 
-.profile-links .material-symbols-outlined {
-  color: var(--color-primary-container);
+.profile-links .material-symbols-outlined,
+.profile-links__icon {
+  flex-shrink: 0;
+  width: 1.125rem;
   font-size: 1.125rem;
+  line-height: 1;
+  text-align: center;
+  color: var(--color-primary-container);
 }
 
 /* Page content */
@@ -528,16 +539,9 @@ a:hover {
   flex-shrink: 0;
 }
 
-.education-grid {
-  display: grid;
-  gap: 1rem;
-  margin-top: 2rem;
-}
-
-@media (min-width: 640px) {
-  .education-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
+.education-chips__label {
+  margin: 1.5rem 0 0.75rem;
+  color: var(--color-secondary);
 }
 
 /* Chips */
@@ -556,6 +560,44 @@ a:hover {
   background: rgba(0, 67, 73, 0.1);
   color: var(--color-primary);
   border: 1px solid rgba(0, 67, 73, 0.2);
+}
+
+.education-plates {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+  margin: 0 0 1.25rem;
+}
+
+.education-plate {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  height: 40px;
+  min-height: 40px;
+  padding: 0 0.75rem;
+  background: var(--color-surface-lowest);
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--radius-lg);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+}
+
+.education-plate .material-symbols-outlined {
+  flex-shrink: 0;
+  font-size: 1.125rem;
+  color: var(--color-primary-container);
+}
+
+.education-plate__text {
+  flex: 1;
+  min-width: 0;
+  font-size: 0.8125rem;
+  line-height: 1.2;
+  color: var(--color-on-surface-variant);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 /* Buttons */
@@ -962,6 +1004,20 @@ a:hover {
 .cv-layout {
   display: grid;
   gap: var(--stack-lg);
+}
+
+.cv-layout > * {
+  min-width: 0;
+}
+
+@media (max-width: 1023px) {
+  .cv-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .cv-main {
+    order: -1;
+  }
 }
 
 @media (min-width: 1024px) {
