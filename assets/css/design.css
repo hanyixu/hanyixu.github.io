@@ -78,10 +78,18 @@ a:hover {
 }
 
 .material-symbols-outlined {
+  font-family: "Material Symbols Outlined";
+  font-weight: normal;
+  font-style: normal;
   font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+  display: inline-block;
+  white-space: nowrap;
   vertical-align: middle;
   font-size: 1.25rem;
   line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased;
 }
 
 .material-symbols-outlined--filled {
@@ -367,7 +375,8 @@ a:hover {
 }
 
 .profile-card__name {
-  margin: 1rem 0 0.25rem;
+  margin: 1.75rem 0 0.25rem;
+  font-size: clamp(1.625rem, 3.5vw, 2.125rem);
 }
 
 .profile-card__pronouns {
@@ -649,15 +658,22 @@ a:hover {
 
 .tech-links a {
   font-size: 0.9375rem;
-  color: var(--color-on-surface-variant);
+  color: var(--color-background);
   text-decoration: none;
-  border-bottom: 1px solid var(--color-border-light);
+  border-bottom: 1px solid var(--color-background);
   padding-bottom: 2px;
+  transition: color var(--transition), border-color var(--transition);
 }
 
-.tech-links a:hover {
-  color: var(--color-primary);
-  border-color: var(--color-primary-container);
+.tech-links a:hover,
+.tech-links a:focus-visible {
+  color: var(--color-on-surface-variant);
+  border-bottom-color: var(--color-border-light);
+}
+
+.tech-links a:focus-visible {
+  outline: 2px solid var(--color-primary-container);
+  outline-offset: 2px;
 }
 
 /* Thesis card */

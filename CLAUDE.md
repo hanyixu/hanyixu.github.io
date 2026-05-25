@@ -31,7 +31,8 @@ Hanyi Xu's personal academic website — a static site hosted on GitHub Pages at
 
 ## CSS and Assets
 
-- `assets/css/design.css` — main stylesheet (Academic Minimalist design system: teal palette, Manrope/Hanken Grotesk/JetBrains Mono via Google Fonts, Material Symbols)
+- `assets/css/design.css` — main stylesheet (Academic Minimalist design system: teal palette, Manrope/Hanken Grotesk/JetBrains Mono via Google Fonts)
+- `assets/css/material-symbols.css` + `assets/fonts/material-symbols-outlined.ttf` — self-hosted Material Symbols icons (no Google Fonts for icons)
 - `assets/js/site.js` — mobile nav toggle and scroll fade-in animations
 - `assets/css/main.css` — legacy academic template styles (kept in repo; pages use `design.css`)
 - `assets/css/lato-fonts.css` — legacy self-hosted Lato (unused by current pages)

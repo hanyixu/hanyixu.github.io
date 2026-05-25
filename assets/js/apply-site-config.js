@@ -172,10 +172,12 @@
     }
   }
 
-  var synced = loadConfigSync();
-  if (synced) {
-    apply(synced);
-  } else if (typeof fetch === 'function') {
+  function start(cfg) {
+    if (cfg) {
+      apply(cfg);
+      return;
+    }
+    if (typeof fetch !== 'function') return;
     fetch(configUrl(), { credentials: 'same-origin' })
       .then(function (r) {
         if (!r.ok) {
@@ -186,4 +188,6 @@
       .then(apply)
       .catch(function () {});
   }
+
+  start(loadConfigSync());
 })();
