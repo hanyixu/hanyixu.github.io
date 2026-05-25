@@ -102,7 +102,51 @@
     }
 
     var eduEl = document.querySelector('[data-site-block="education"]');
-    if (eduEl) setLinesWithBreaks(eduEl, get(cfg, 'about.educationLines'));
+    if (eduEl) {
+      var edu = get(cfg, 'about.education');
+      if (edu && edu.length) {
+        eduEl.textContent = '';
+        eduEl.className = 'education-grid';
+        edu.forEach(function (item) {
+          var card = document.createElement('div');
+          card.className = 'card education-card';
+          card.innerHTML =
+            '<div class="card__row">' +
+            '<span class="material-symbols-outlined card__icon" aria-hidden="true">school</span>' +
+            '<div><h3 class="card__title"></h3><p class="card__subtitle"></p></div></div>';
+          card.querySelector('.card__title').textContent = item.school || '';
+          card.querySelector('.card__subtitle').textContent = item.degree || '';
+          eduEl.appendChild(card);
+        });
+      } else {
+        setLinesWithBreaks(eduEl, get(cfg, 'about.educationLines'));
+      }
+    }
+
+    var chipsEl = document.querySelector('[data-site-block="research-interests"]');
+    if (chipsEl) {
+      var interests = get(cfg, 'about.researchInterests');
+      if (interests && interests.length) {
+        chipsEl.textContent = '';
+        interests.forEach(function (label) {
+          var chip = document.createElement('span');
+          chip.className = 'chip';
+          chip.textContent = label;
+          chipsEl.appendChild(chip);
+        });
+      }
+    }
+
+    document.querySelectorAll('[data-site-content]').forEach(function (el) {
+      if (el.tagName === 'META') return;
+      var path = el.getAttribute('data-site-content');
+      if (!path || path.indexOf('site.') === 0) return;
+      var v = get(cfg, path);
+      if (v != null) {
+        if (el.tagName === 'META') el.setAttribute('content', v);
+        else el.textContent = v;
+      }
+    });
 
     var cvLink = document.querySelector('[data-site-cv-download]');
     if (cvLink) {

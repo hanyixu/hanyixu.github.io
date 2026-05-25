@@ -1,6 +1,5 @@
-
 <!doctype html>
-<html lang="en" class="no-js">
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <link rel="icon" href="./assets/img/favicon.png" type="image/png" sizes="32x32">
@@ -8,106 +7,127 @@
     <title data-page-title="About Me">About Me - Hanyi Xu</title>
     <meta name="description" content="PhD Student at Florida State University" data-site-content="site.defaultMetaDescription">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="cleartype" content="on">
-    <script>
-      document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
-    </script>
-    <link rel="preload" href="./assets/fonts/Lato/Lato-Light.ttf" as="font" type="font/ttf" crossorigin>
-    <link rel="preload" href="./assets/fonts/Lato/Lato-Regular.ttf" as="font" type="font/ttf" crossorigin>
-    <link rel="stylesheet" href="./assets/css/lato-fonts.css?v=20260503">
-    <link rel="stylesheet" href="./assets/css/fontawesome-all.min.css">
-    <link rel="stylesheet" href="./assets/css/main.css?v=20260532">
-    <link rel="stylesheet" href="./assets/css/academicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600&family=JetBrains+Mono:wght@500&family=Manrope:wght@600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/design.css?v=20260525">
   </head>
   <body>
-    <div class="masthead">
-      <div class="masthead__inner-wrap">
-        <div class="masthead__menu">
-          <nav id="site-nav" class="greedy-nav">
-            <button><div class="navicon"></div></button>
-            <ul class="visible-links">
-              <li class="masthead__menu-item"><a href="./index.html">Home</a></li>
-              <li class="masthead__menu-item"><a href="./research.html">Research</a></li>
-              <li class="masthead__menu-item"><a href="./publications.html">Publications</a></li>
-              <li class="masthead__menu-item"><a href="./cv.html">CV</a></li>
-              <li class="masthead__menu-item"><a href="./photo-lab.html">Photo Lab</a></li>
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="site-brand" href="./index.html" data-site-text="person.displayName">Hanyi Xu</a>
+        <nav class="site-nav" aria-label="Main">
+          <a href="./index.html" class="is-active" aria-current="page">Home</a>
+          <a href="./research.html">Research</a>
+          <a href="./publications.html">Publications</a>
+          <a href="./cv.html">CV</a>
+          <a href="./photo-lab.html">Photo Lab</a>
+        </nav>
+        <div class="site-header__actions">
+          <a class="site-header__mail" href="mailto:hx26@fsu.edu" data-site-email="links.email" aria-label="Email">
+            <span class="material-symbols-outlined" aria-hidden="true">mail</span>
+          </a>
+          <button type="button" class="site-menu-toggle" data-site-menu-toggle aria-expanded="false" aria-label="Open menu">
+            <span class="material-symbols-outlined" aria-hidden="true">menu</span>
+          </button>
+        </div>
+      </div>
+      <nav class="site-mobile-nav" data-site-mobile-nav aria-label="Mobile">
+        <a href="./index.html" class="is-active" aria-current="page">Home</a>
+        <a href="./research.html">Research</a>
+        <a href="./publications.html">Publications</a>
+        <a href="./cv.html">CV</a>
+        <a href="./photo-lab.html">Photo Lab</a>
+      </nav>
+    </header>
+
+    <div class="site-shell">
+      <main class="site-main site-main--home">
+        <div class="site-container home-grid">
+          <aside class="profile-card fade-in" itemscope itemtype="http://schema.org/Person">
+            <div class="profile-card__photo">
+              <img src="./images/profile.jpeg" alt="Hanyi Xu" width="400" height="400" data-site-src="profiles.avatarPath" data-site-alt="profiles.avatarAlt">
+            </div>
+            <h1 class="text-display profile-card__name" data-site-text="person.displayName">Hanyi Xu</h1>
+            <p class="profile-card__pronouns" data-site-text="person.pronouns">He/Him/His</p>
+            <ul class="profile-links">
+              <li>
+                <span class="material-symbols-outlined material-symbols-outlined--filled" aria-hidden="true">location_on</span>
+                <span data-site-text="person.location">Ningbo, China</span>
+              </li>
+              <li>
+                <span class="material-symbols-outlined material-symbols-outlined--filled" aria-hidden="true">account_balance</span>
+                <span data-site-text="person.affiliation">Florida State University</span>
+              </li>
+              <li>
+                <span class="material-symbols-outlined material-symbols-outlined--filled" aria-hidden="true">mail</span>
+                <a href="mailto:hx26@fsu.edu" data-site-email="links.email">Email</a>
+              </li>
+              <li>
+                <span class="material-symbols-outlined material-symbols-outlined--filled" aria-hidden="true">link</span>
+                <a href="https://orcid.org/0009-0002-0257-3630" data-site-href="links.orcid">ORCID</a>
+              </li>
+              <li>
+                <span class="material-symbols-outlined material-symbols-outlined--filled" aria-hidden="true">code</span>
+                <a href="https://github.com/hanyixu" data-site-href="links.github">GitHub</a>
+              </li>
+              <li>
+                <span class="material-symbols-outlined material-symbols-outlined--filled" aria-hidden="true">work</span>
+                <a href="https://www.linkedin.com/in/xuhanyi" data-site-href="links.linkedin">LinkedIn</a>
+              </li>
             </ul>
-            <ul class="hidden-links hidden"></ul>
+          </aside>
+
+          <article class="page-content fade-in" itemscope itemtype="http://schema.org/CreativeWork">
+            <meta itemprop="headline" content="About Me">
+            <section class="section">
+              <h2 class="text-headline section__title">About Me</h2>
+              <div class="prose">
+                <p class="location-line">
+                  <span class="material-symbols-outlined material-symbols-outlined--filled" aria-hidden="true">location_on</span>
+                  <span data-site-text="about.locationLine">Ningbo, China</span>
+                </p>
+                <p data-site-text="about.introText">I am a PhD student at Florida State University School of Communication. I am interested in the intersection of media psychology, human-computer interaction, and computational social science. My work uses data-driven methods to explore how digital platforms, especially online games, shape user emotions and identities. I am interested in understanding why and how interactive media shapes users’ emotions.</p>
+              </div>
+              <div data-site-block="education"></div>
+              <div class="tech-links">
+                <a href="https://pcpartpicker.com/list/nM6LC8" data-site-href="about.computerBuildUrl">Computer build</a>
+                <a href="http://www.3dmark.com/spy/55808007" data-site-href="about.computerTestUrl">3DMark benchmark</a>
+              </div>
+            </section>
+
+            <section class="section">
+              <h2 class="text-headline section__title">Research Interests</h2>
+              <div class="chips" data-site-block="research-interests">
+                <span class="chip">Media Psychology</span>
+                <span class="chip">Human-Computer Interaction</span>
+                <span class="chip">Computational Social Science</span>
+                <span class="chip">Digital Platforms</span>
+              </div>
+            </section>
+          </article>
+        </div>
+      </main>
+
+      <footer class="site-footer">
+        <div class="site-container site-footer__inner">
+          <div>
+            <p class="site-footer__brand" data-site-text="person.displayName">Hanyi Xu</p>
+            <p class="site-footer__copy"><span data-site-footer-copyright></span></p>
+            <p class="site-footer__updated"><span data-site-footer-updated></span></p>
+          </div>
+          <nav class="site-footer__links" aria-label="Footer">
+            <a href="https://github.com/hanyixu" data-site-href="links.github">GitHub</a>
+            <a href="https://www.linkedin.com/in/xuhanyi" data-site-href="links.linkedin">LinkedIn</a>
+            <a href="https://orcid.org/0009-0002-0257-3630" data-site-href="links.orcid">ORCID</a>
+            <a href="mailto:hx26@fsu.edu" data-site-email="links.email">Email</a>
           </nav>
-        </div>
-      </div>
-    </div>
-
-    <div id="main" role="main">
-      <div class="sidebar sticky">
-        <div itemscope itemtype="http://schema.org/Person">
-          <div class="author__avatar">
-            <img src="./images/profile.jpeg" class="author__avatar" alt="Hanyi Xu" data-site-src="profiles.avatarPath" data-site-alt="profiles.avatarAlt">
-          </div>
-
-          <div class="author__content">
-            <h3 class="author__name" data-site-text="person.displayName">Hanyi Xu</h3>
-            <p class="author__pronouns" data-site-text="person.pronouns">He/Him/His</p>
-          </div>
-
-          <div class="author__urls-wrapper">
-            <button class="btn btn--inverse">Follow</button>
-            <ul class="author__urls social-icons">
-              <li class="author__desktop"><i class="fa-solid fa-location-dot icon-pad-right" aria-hidden="true"></i><span data-site-text="person.location">Ningbo, China</span></li>
-              <li class="author__desktop"><i class="fas fa-fw fa-building-columns icon-pad-right" aria-hidden="true"></i><span data-site-text="person.affiliation">Florida State University</span></li>
-              <li><a href="mailto:hx26@fsu.edu" data-site-email="links.email"><i class="fas fa-fw fa-envelope icon-pad-right" aria-hidden="true"></i>Email</a></li>
-              <li><a href="https://orcid.org/0009-0002-0257-3630" data-site-href="links.orcid"><i class="ai ai-orcid ai-fw icon-pad-right"></i>ORCID</a></li>
-              <li><a href="https://github.com/hanyixu" data-site-href="links.github"><i class="fab fa-fw fa-github icon-pad-right" aria-hidden="true"></i>GitHub</a></li>
-              <li><a href="https://www.linkedin.com/in/xuhanyi" data-site-href="links.linkedin"><i class="fab fa-fw fa-linkedin icon-pad-right" aria-hidden="true"></i>LinkedIn</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <article class="page page--home" itemscope itemtype="http://schema.org/CreativeWork">
-        <meta itemprop="headline" content="About Me">
-        <meta itemprop="description" content="About me">
-        <!--
-        <div class="page__hero" role="presentation">
-          <img src="./assets/img/index-banner.jpg" class="page__hero-image" width="1920" height="640" alt="" decoding="async">
-        </div>
-        -->
-
-        <div class="page__inner-wrap">
-          <header>
-            <h1 class="page__title" itemprop="headline">About Me</h1>
-          </header>
-
-          <section class="page__content" itemprop="text">
-            <p data-site-text="about.locationLine">📍 Ningbo, China</p>
-
-            <p data-site-text="about.introText">I am a PhD student at Florida State University School of Communication. I am interested in the intersection of media psychology, human-computer interaction, and computational social science. My work uses data-driven methods to explore how digital platforms, especially online games, shape user emotions and identities. I am interested in understanding why and how interactive media shapes users’ emotions.</p>
-
-            <p data-site-block="education">
-              📝 Syracuse University, B.Sc., Advertising<br>
-              📝 Columbia University, M.A., Quantitative Methods in the Social Sciences
-            </p>
-
-            <p><a href="https://pcpartpicker.com/list/nM6LC8" style="color: var(--global-bg-color); text-decoration: none;">Here is my computer build.</a></p>
-
-            <p><a href="http://www.3dmark.com/spy/55808007" style="color: var(--global-bg-color); text-decoration: none;">Here is my computer test result.</a></p>
-          </section>
-
-          <footer class="page__meta"></footer>
-        </div>
-      </article>
-    </div>
-
-    <div class="page__footer">
-      <footer>
-        <div class="page__footer-copyright">
-          <span data-site-footer-copyright></span><br>
-          <span data-site-footer-updated></span>
         </div>
       </footer>
     </div>
 
     <script src="./assets/js/apply-site-config.js"></script>
-    <script src="./assets/js/main.min.js"></script>
+    <script src="./assets/js/site.js?v=20260525"></script>
   </body>
 </html>

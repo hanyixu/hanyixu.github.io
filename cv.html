@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" class="no-js">
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <link rel="icon" href="./assets/img/favicon.png" type="image/png" sizes="32x32">
@@ -7,171 +7,410 @@
     <title data-page-title="CV">CV - Hanyi Xu</title>
     <meta name="description" content="PhD Student at Florida State University" data-site-content="site.defaultMetaDescription">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="cleartype" content="on">
-    <script>
-      document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
-    </script>
-    <link rel="preload" href="./assets/fonts/Lato/Lato-Light.ttf" as="font" type="font/ttf" crossorigin>
-    <link rel="preload" href="./assets/fonts/Lato/Lato-Regular.ttf" as="font" type="font/ttf" crossorigin>
-    <link rel="stylesheet" href="./assets/css/lato-fonts.css?v=20260503">
-    <link rel="stylesheet" href="./assets/css/fontawesome-all.min.css">
-    <link rel="stylesheet" href="./assets/css/main.css?v=20260532">
-    <link rel="stylesheet" href="./assets/css/academicons.min.css">
-    <style>
-      .cv-download-wrap {
-        position: relative;
-        display: inline-block;
-        margin: 0 0 1.25rem;
-      }
-      .cv-file-info {
-        position: absolute;
-        top: calc(100% + 0.5rem);
-        left: 0;
-        z-index: 20;
-        display: block;
-        padding: 0.55rem 0.75rem;
-        width: max-content;
-        max-width: min(22rem, 90vw);
-        font-size: 0.72rem;
-        line-height: 1.45;
-        color: #555 !important;
-        text-align: left;
-        font-weight: 400;
-        background: #f9fafb;
-        border: 1px solid #e3e5e7;
-        border-radius: 6px;
-        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
-        box-sizing: border-box;
-        opacity: 0;
-        visibility: hidden;
-        transform: translateY(-4px);
-        transition: opacity 0.15s ease, transform 0.15s ease, visibility 0.15s ease;
-        pointer-events: none;
-      }
-      .cv-download-wrap:hover .cv-file-info,
-      .cv-download-wrap:focus-within .cv-file-info {
-        opacity: 1;
-        visibility: visible;
-        transform: translateY(0);
-      }
-      a.btn.cv-download {
-        display: inline-block;
-        width: auto;
-        margin: 0;
-        padding: 0.5em 1em;
-        font-size: 0.875em;
-        line-height: 1.3;
-        color: #111 !important;
-        background-color: #fff !important;
-        border: 1px solid #111 !important;
-        border-radius: 4px;
-      }
-      a.btn.cv-download:hover {
-        color: #fff !important;
-        background-color: #111 !important;
-        border-color: #111 !important;
-      }
-      .cv-download .fa-fw {
-        margin-right: 0.5em;
-      }
-      .cv-supplement {
-        margin: 0;
-        max-width: 5.5rem;
-      }
-      .cv-supplement img {
-        display: block;
-        width: 100%;
-        max-width: 5.5rem;
-        height: auto;
-        border-radius: 4px;
-      }
-      .cv-supplement figcaption {
-        margin-top: 0.45em;
-        font-size: 0.7rem;
-        line-height: 1.25;
-        color: var(--global-fig-caption-color, #777a7d);
-      }
-    </style>
-      </head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600&family=JetBrains+Mono:wght@500&family=Manrope:wght@600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/design.css?v=20260525b">
+  </head>
   <body>
-    <div class="masthead">
-      <div class="masthead__inner-wrap">
-        <div class="masthead__menu">
-          <nav id="site-nav" class="greedy-nav">
-            <button><div class="navicon"></div></button>
-            <ul class="visible-links">
-              <li class="masthead__menu-item"><a href="./index.html">Home</a></li>
-              <li class="masthead__menu-item"><a href="./research.html">Research</a></li>
-              <li class="masthead__menu-item"><a href="./publications.html">Publications</a></li>
-              <li class="masthead__menu-item"><a href="./cv.html">CV</a></li>
-              <li class="masthead__menu-item"><a href="./photo-lab.html">Photo Lab</a></li>
-            </ul>
-            <ul class="hidden-links hidden"></ul>
-          </nav>
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="site-brand" href="./index.html" data-site-text="person.displayName">Hanyi Xu</a>
+        <nav class="site-nav" aria-label="Main">
+          <a href="./index.html">Home</a>
+          <a href="./research.html">Research</a>
+          <a href="./publications.html">Publications</a>
+          <a href="./cv.html" class="is-active" aria-current="page">CV</a>
+          <a href="./photo-lab.html">Photo Lab</a>
+        </nav>
+        <div class="site-header__actions">
+          <a class="site-header__mail" href="mailto:hx26@fsu.edu" data-site-email="links.email" aria-label="Email">
+            <span class="material-symbols-outlined" aria-hidden="true">mail</span>
+          </a>
+          <button type="button" class="site-menu-toggle" data-site-menu-toggle aria-expanded="false" aria-label="Open menu">
+            <span class="material-symbols-outlined" aria-hidden="true">menu</span>
+          </button>
         </div>
       </div>
-    </div>
+      <nav class="site-mobile-nav" data-site-mobile-nav aria-label="Mobile">
+        <a href="./index.html">Home</a>
+        <a href="./research.html">Research</a>
+        <a href="./publications.html">Publications</a>
+        <a href="./cv.html" class="is-active" aria-current="page">CV</a>
+        <a href="./photo-lab.html">Photo Lab</a>
+      </nav>
+    </header>
 
-    <div id="main" role="main">
-      <div class="sidebar sticky">
-        <div itemscope itemtype="http://schema.org/Person">
-          <div class="author__avatar">
-            <img src="./images/profile.jpeg" class="author__avatar" alt="Hanyi Xu" data-site-src="profiles.avatarPath" data-site-alt="profiles.avatarAlt">
-          </div>
-
-          <div class="author__content">
-            <h3 class="author__name" data-site-text="person.displayName">Hanyi Xu</h3>
-            <p class="author__pronouns" data-site-text="person.pronouns">He/Him/His</p>
-          </div>
-
-          <div class="author__urls-wrapper">
-            <button class="btn btn--inverse">Follow</button>
-            <ul class="author__urls social-icons">
-              <li class="author__desktop"><i class="fa-solid fa-location-dot icon-pad-right" aria-hidden="true"></i><span data-site-text="person.location">Ningbo, China</span></li>
-              <li class="author__desktop"><i class="fas fa-fw fa-building-columns icon-pad-right" aria-hidden="true"></i><span data-site-text="person.affiliation">Florida State University</span></li>
-              <li><a href="mailto:hx26@fsu.edu" data-site-email="links.email"><i class="fas fa-fw fa-envelope icon-pad-right" aria-hidden="true"></i>Email</a></li>
-              <li><a href="https://orcid.org/0009-0002-0257-3630" data-site-href="links.orcid"><i class="ai ai-orcid ai-fw icon-pad-right"></i>ORCID</a></li>
-              <li><a href="https://github.com/hanyixu" data-site-href="links.github"><i class="fab fa-fw fa-github icon-pad-right" aria-hidden="true"></i>GitHub</a></li>
-              <li><a href="https://www.linkedin.com/in/xuhanyi" data-site-href="links.linkedin"><i class="fab fa-fw fa-linkedin icon-pad-right" aria-hidden="true"></i>LinkedIn</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
-        <meta itemprop="headline" content="CV">
-        <meta itemprop="description" content="Curriculum vitae">
-        <div class="page__inner-wrap">
-          <header>
-            <h1 class="page__title" itemprop="headline">CV</h1>
+    <div class="site-shell">
+      <main class="site-main">
+        <div class="site-container page-content">
+          <header class="cv-page-header fade-in">
+            <div class="cv-page-header__text">
+              <h1 class="text-display text-display--primary">Curriculum Vitae</h1>
+              <p class="text-body-lg" data-site-content="research.tagline">My research examines how interactive media shape users’ stress, motivation, and well-being. I study when enjoyable experiences become demanding and how design can support both engagement and restoration.</p>
+            </div>
+            <div class="cv-page-header__download">
+              <a href="./files/CV_HanyiXu.pdf" class="btn btn--primary" data-site-cv-download download>
+                <span class="material-symbols-outlined" aria-hidden="true">download</span>
+                Download PDF
+              </a>
+              <div class="cv-file-meta" data-cv-tooltip>
+                File name: CV_HanyiXu.pdf<br>
+                Last updated: 2026-05<br>
+                File size: 68KB<br>
+                File type: PDF
+              </div>
+            </div>
           </header>
 
-          <section class="page__content" itemprop="text">
-            <p class="cv-download-wrap">
-              <a href="./files/CV_HanyiXu.pdf" class="btn cv-download" data-site-cv-download aria-describedby="cv-file-tooltip"><i class="fas fa-fw fa-file-pdf" aria-hidden="true"></i>Download CV (PDF)</a>
-              <span class="cv-file-info" id="cv-file-tooltip" data-cv-tooltip>File name: CV_HanyiXu.pdf<br>Last updated: 2026-05<br>File size: 68KB<br>File type: PDF</span>
-            </p>
-            <!-- <figure class="cv-supplement">
-              <img src="./assets/img/profile-2.jpg" width="384" height="512" alt="Hanyi Xu — additional portrait">
-              <figcaption>补充肖像 / Additional portrait.</figcaption>
-            </figure> -->
-          </section>
+          <div class="cv-layout fade-in">
+            <aside class="cv-sidebar" aria-label="Contact and skills">
+              <section class="cv-sidebar__block">
+                <h2 class="cv-sidebar__title">Contact</h2>
+                <ul class="cv-sidebar__list">
+                  <li>
+                    <span class="material-symbols-outlined" aria-hidden="true">location_on</span>
+                    <span>3100 University Center C<br>Tallahassee, FL 32306-2664</span>
+                  </li>
+                  <li>
+                    <span class="material-symbols-outlined" aria-hidden="true">call</span>
+                    <span>315-640-9091</span>
+                  </li>
+                  <li>
+                    <span class="material-symbols-outlined" aria-hidden="true">mail</span>
+                    <a href="mailto:hx26@fsu.edu" data-site-email="links.email">hx26@fsu.edu</a>
+                  </li>
+                  <li>
+                    <span class="material-symbols-outlined" aria-hidden="true">language</span>
+                    <a href="https://hanyixu.com">hanyixu.com</a>
+                  </li>
+                </ul>
+              </section>
 
-          <footer class="page__meta"></footer>
+              <section class="cv-sidebar__block">
+                <h2 class="cv-sidebar__title">Links</h2>
+                <ul class="cv-sidebar__list">
+                  <li>
+                    <span class="material-symbols-outlined" aria-hidden="true">fingerprint</span>
+                    <a href="https://orcid.org/0009-0002-0257-3630" data-site-href="links.orcid">ORCID: 0009-0002-0257-3630</a>
+                  </li>
+                  <li>
+                    <span class="material-symbols-outlined" aria-hidden="true">work</span>
+                    <a href="https://www.linkedin.com/in/xuhanyi" data-site-href="links.linkedin">LinkedIn</a>
+                  </li>
+                  <li>
+                    <span class="material-symbols-outlined" aria-hidden="true">code</span>
+                    <a href="https://github.com/hanyixu" data-site-href="links.github">GitHub</a>
+                  </li>
+                </ul>
+              </section>
+
+              <section class="cv-sidebar__block">
+                <h2 class="cv-sidebar__title">Skills</h2>
+                <div class="cv-skill-group">
+                  <h4>Programming &amp; Data</h4>
+                  <div class="chips">
+                    <span class="chip">Python</span>
+                    <span class="chip">R</span>
+                    <span class="chip">SPSS</span>
+                    <span class="chip">HTML</span>
+                    <span class="chip">GitHub</span>
+                    <span class="chip">MAXQDA</span>
+                  </div>
+                </div>
+                <div class="cv-skill-group">
+                  <h4>Marketing &amp; Analytics</h4>
+                  <div class="chips">
+                    <span class="chip">GWI</span>
+                    <span class="chip">MRI Simmons</span>
+                    <span class="chip">Nielsen Commspoint</span>
+                  </div>
+                </div>
+                <div class="cv-skill-group">
+                  <h4>Design &amp; Media</h4>
+                  <div class="chips">
+                    <span class="chip">Photoshop</span>
+                    <span class="chip">Premiere Pro</span>
+                    <span class="chip">Canva</span>
+                  </div>
+                </div>
+              </section>
+
+              <section class="cv-sidebar__block">
+                <h2 class="cv-sidebar__title">Licenses</h2>
+                <ul class="cv-simple-list">
+                  <li>CITI Program — Human Subjects, RCR, FDA-Regulated Research (2025–2028)</li>
+                  <li>Microsoft Office Specialist: Excel 2019 Associate (2022)</li>
+                </ul>
+              </section>
+            </aside>
+
+            <div class="cv-main">
+              <section class="cv-section" id="education">
+                <h2 class="cv-section__title">
+                  <span class="material-symbols-outlined" aria-hidden="true">school</span>
+                  Education
+                </h2>
+                <div class="cv-edu-stack">
+                  <article class="cv-edu-item">
+                    <p class="cv-edu-item__date">Aug. 2026 — Present</p>
+                    <h3 class="cv-edu-item__degree">Doctor of Philosophy in Communication</h3>
+                    <p class="cv-edu-item__school">Florida State University · School of Communication</p>
+                  </article>
+                  <article class="cv-edu-item">
+                    <p class="cv-edu-item__date">Aug. 2024 — Feb. 2026</p>
+                    <h3 class="cv-edu-item__degree">Master of Arts in Quantitative Methods in the Social Sciences</h3>
+                    <p class="cv-edu-item__school">Columbia University in the City of New York</p>
+                    <p class="cv-edu-item__detail">Thesis: “Why Games Stop Feeling Fun: A Computational Approach to Emotional Demand in Play.”</p>
+                    <p class="cv-edu-item__detail" style="font-style: normal;">Advisor: Dr. Gregory Kossinets</p>
+                  </article>
+                  <article class="cv-edu-item">
+                    <p class="cv-edu-item__date">Aug. 2020 — May 2024</p>
+                    <h3 class="cv-edu-item__degree">Bachelor of Science in Advertising</h3>
+                    <p class="cv-edu-item__school">Syracuse University · Minor in Computer Engineering</p>
+                  </article>
+                </div>
+              </section>
+
+              <section class="cv-section" id="research-experience">
+                <h2 class="cv-section__title">
+                  <span class="material-symbols-outlined" aria-hidden="true">science</span>
+                  Research Experience
+                </h2>
+                <article class="cv-entry">
+                  <div class="cv-entry__head">
+                    <h3 class="cv-entry__role">Graduate Research Assistant</h3>
+                    <span class="cv-entry__date">May 2025 — Feb. 2026</span>
+                  </div>
+                  <p class="cv-entry__org">Language and Cognitive Neuroscience Lab · Teachers College, Columbia University</p>
+                  <p class="cv-entry__pi">Principal Investigator: Dr. Peter Gordon</p>
+                  <ul>
+                    <li>Develop automated sLORETA EEG analysis scripts using Python and MNE for 24 subjects to enable real-time 3D brain visualization.</li>
+                    <li>Design a configurable data pipeline supporting diverse cognitive tasks, including direction, size, and cardinality assessments.</li>
+                    <li>Operate EEG and eye-tracking instrumentation to facilitate rigorous data collection and maintain optimal signal quality.</li>
+                  </ul>
+                </article>
+                <article class="cv-entry">
+                  <div class="cv-entry__head">
+                    <h3 class="cv-entry__role">Graduate Research Assistant</h3>
+                    <span class="cv-entry__date">Oct. 2024 — May 2025</span>
+                  </div>
+                  <p class="cv-entry__org">Cognitive Media Lab · UCSD/Columbia University</p>
+                  <p class="cv-entry__pi">Principal Investigator: Dr. Michael Haupt</p>
+                  <ul>
+                    <li>Program and implement digital surveys to facilitate large-scale data collection for social research.</li>
+                    <li>Execute statistical analyses using Python and SPSS to model complex relationships via multiple regression and group comparisons.</li>
+                    <li>Evaluate socioeconomic and demographic correlations to identify systemic barriers to healthcare access.</li>
+                  </ul>
+                </article>
+                <article class="cv-entry">
+                  <div class="cv-entry__head">
+                    <h3 class="cv-entry__role">Undergraduate Research Assistant</h3>
+                    <span class="cv-entry__date">Apr. 2023 — May 2024</span>
+                  </div>
+                  <p class="cv-entry__org">Meaningful Math Research Group · Syracuse University</p>
+                  <p class="cv-entry__pi">Principal Investigator: Dr. Nicole Fonger</p>
+                  <ul>
+                    <li>Investigated the impact of social justice themes on critical thinking, identity, and academic engagement in precalculus students.</li>
+                    <li>Employed mixed methods (interviews and surveys) to gather and analyze data from 58 students at a predominantly white institution.</li>
+                    <li>Synthesized qualitative data into academic manuscripts and presented findings at conferences including PME-NA 2024.</li>
+                  </ul>
+                </article>
+                <article class="cv-entry">
+                  <div class="cv-entry__head">
+                    <h3 class="cv-entry__role">Undergraduate Research Assistant</h3>
+                    <span class="cv-entry__date">Feb. 2022 — May 2022</span>
+                  </div>
+                  <p class="cv-entry__org">The Sharpe Lab · Syracuse University</p>
+                  <p class="cv-entry__pi">Principal Investigator: Dr. Charlotte Sharpe</p>
+                  <ul>
+                    <li>Facilitated on-site focus groups and conducted semi-structured interviews to gather primary qualitative data.</li>
+                    <li>Analyzed interview transcripts to identify key thematic patterns regarding educational perspectives.</li>
+                  </ul>
+                </article>
+              </section>
+
+              <section class="cv-section" id="publications">
+                <h2 class="cv-section__title">
+                  <span class="material-symbols-outlined" aria-hidden="true">menu_book</span>
+                  Publications
+                </h2>
+                <div class="cv-bib">
+                  <p class="text-label text-muted" style="margin: 0 0 0.5rem;">Peer-Reviewed Journal Articles</p>
+                  <div class="cv-bib__item">
+                    Boutros, E., Wu, Q., <span class="author-self">Xu, H.</span>, &amp; Fonger, N. L. (2023). Making mathematics meaningful: How learning about local social injustices develops undergraduate students’ identity, intellect, skill, and criticality. <em>The Crown: Syracuse Undergraduate Research Journal</em>, 1, Article 16. <a href="https://surface.syr.edu/thecrown/vol1/iss1/16">Link</a>
+                  </div>
+                  <p class="text-label text-muted" style="margin: 1rem 0 0.5rem;">Conference Proceedings</p>
+                  <div class="cv-bib__item">
+                    <span class="author-self">Xu, H.</span>, Raja, W., Boutros, E., Wu, Q., &amp; Fonger, N. L. (2024). Emotions in social justice mathematics: Students’ experience from a college precalculus classroom. In K. W. Kosko et al. (Eds.), <em>Proceedings of PME-NA 46</em> (pp. 956–961). Kent State University.
+                  </div>
+                  <p class="text-label text-muted" style="margin: 1rem 0 0.5rem;">Thesis</p>
+                  <div class="cv-bib__item">
+                    <span class="author-self">Xu, H.</span> (2026). Why Games Stop Feeling Fun: A Computational Approach to Emotional Demand in Play. M.A. Thesis, Columbia University. <a href="https://doi.org/10.7916/3mm4-3482">DOI</a>
+                  </div>
+                </div>
+                <p class="text-body" style="margin-top: 1rem;"><a href="./publications.html">View full publications list →</a></p>
+              </section>
+
+              <section class="cv-section" id="presentations">
+                <h2 class="cv-section__title">
+                  <span class="material-symbols-outlined" aria-hidden="true">record_voice_over</span>
+                  Presentations
+                </h2>
+                <div class="cv-bib">
+                  <p class="text-label text-muted" style="margin: 0 0 0.5rem;">Talks</p>
+                  <div class="cv-bib__item"><span class="author-self">Xu, H.</span> (2024, April). Making mathematics meaningful: A mixed-methods study of undergraduate students’ learning through social justice. ACC Meeting of the Minds, South Bend, IN.</div>
+                  <div class="cv-bib__item">Boutros, E., Fonger, N. L., Wu, Q., &amp; <span class="author-self">Xu, H.</span> (2023, December). Making mathematics meaningful. SOURCE Fall Research Expo, Syracuse University.</div>
+                  <div class="cv-bib__item">Boutros, E., Fonger, N. L., Wu, Q., &amp; <span class="author-self">Xu, H.</span> (2023, October). Enhancing students’ inclusion and belonging. D.E.I.A. Symposium, Syracuse University.</div>
+                  <p class="text-label text-muted" style="margin: 1rem 0 0.5rem;">Posters</p>
+                  <div class="cv-bib__item"><span class="author-self">Xu, H.</span> (2026, May). Demand overload: How game mechanics trigger stress and reduce enjoyment. APS Annual Convention, Barcelona, Spain.</div>
+                  <div class="cv-bib__item">Rhee, V., Chen, Z., Gushiken, Y., Bakhru, K., <span class="author-self">Xu, H.</span>, et al. (2026, March). Electrophysiological and behavioral indices of numerical perception and cognition. CNS Annual Meeting, Vancouver, Canada. <a href="./files/CNS2026.pdf">Poster</a></div>
+                  <div class="cv-bib__item">Boutros, E., Fonger, N. L., Wu, Q., &amp; <span class="author-self">Xu, H.</span> (2023, August). Making mathematics meaningful. SOURCE Symposium, Syracuse University.</div>
+                </div>
+              </section>
+
+              <section class="cv-section" id="teaching">
+                <h2 class="cv-section__title">
+                  <span class="material-symbols-outlined" aria-hidden="true">cast_for_education</span>
+                  Teaching Experience
+                </h2>
+                <div class="cv-teaching-stack">
+                  <article class="cv-teaching-item">
+                    <span class="material-symbols-outlined" aria-hidden="true">school</span>
+                    <div>
+                      <h3 class="cv-teaching-item__school">Florida State University</h3>
+                      <ul>
+                        <li>Teaching Assistant, Introduction to Mass Media (MMC 2000) — Fall 2026</li>
+                        <li>Teaching Assistant, Principles of Advertising (ADV 3008) — Fall 2026</li>
+                      </ul>
+                    </div>
+                  </article>
+                  <article class="cv-teaching-item">
+                    <span class="material-symbols-outlined" aria-hidden="true">school</span>
+                    <div>
+                      <h3 class="cv-teaching-item__school">Columbia University</h3>
+                      <ul>
+                        <li>Teaching Assistant, NLP for Social Sciences (QMSS GR5067) — Spring/Summer/Fall 2025. Guided graduate students in machine learning models and text analysis for large-scale social datasets.</li>
+                      </ul>
+                    </div>
+                  </article>
+                  <article class="cv-teaching-item">
+                    <span class="material-symbols-outlined" aria-hidden="true">school</span>
+                    <div>
+                      <h3 class="cv-teaching-item__school">Ningbo Landwave EDU</h3>
+                      <ul>
+                        <li>Academic Tutor, TOEFL/SAT/A-Level Math — Spring 2026</li>
+                      </ul>
+                    </div>
+                  </article>
+                  <article class="cv-teaching-item">
+                    <span class="material-symbols-outlined" aria-hidden="true">school</span>
+                    <div>
+                      <h3 class="cv-teaching-item__school">Syracuse University</h3>
+                      <ul>
+                        <li>First Year Leader, First Year Seminar (FYS 101) — Fall 2022, Fall 2023</li>
+                        <li>Calculus Facilitator, AEW for Calculus II (ECS 116) — Fall 2021</li>
+                      </ul>
+                    </div>
+                  </article>
+                </div>
+              </section>
+
+              <section class="cv-section" id="service">
+                <h2 class="cv-section__title">
+                  <span class="material-symbols-outlined" aria-hidden="true">volunteer_activism</span>
+                  Academic &amp; Volunteer Service
+                </h2>
+                <ul class="cv-simple-list">
+                  <li>Reviewer, PME-NA 2024 (Jan. 2024)</li>
+                </ul>
+              </section>
+
+              <section class="cv-section" id="industry">
+                <h2 class="cv-section__title">
+                  <span class="material-symbols-outlined" aria-hidden="true">work</span>
+                  Industry Experience
+                </h2>
+                <article class="cv-entry">
+                  <div class="cv-entry__head">
+                    <h3 class="cv-entry__role">AI Marketing Intern</h3>
+                    <span class="cv-entry__date">Apr. 2026 — Present</span>
+                  </div>
+                  <p class="cv-entry__org">Shengcubic (Beijing) Public Relations Consulting Co., Ltd. · Ningbo, China</p>
+                  <ul>
+                    <li>Develop agent-based tools to audit brand presence across generative engines and LLMs.</li>
+                    <li>Analyze AI-driven search visibility to provide technical website optimization and content strategies.</li>
+                  </ul>
+                </article>
+                <article class="cv-entry">
+                  <div class="cv-entry__head">
+                    <h3 class="cv-entry__role">Account Executive Intern</h3>
+                    <span class="cv-entry__date">Jun. 2024 — Aug. 2024</span>
+                  </div>
+                  <p class="cv-entry__org">Shanghai Blue Universe Digital Technology Co., Ltd. · Shanghai, China</p>
+                  <ul>
+                    <li>Coordinated workflow for Sony Camera Line Promotion across RED and Bilibili platforms.</li>
+                    <li>Analyzed market share performance of new releases using Power BI to inform campaign adjustments.</li>
+                  </ul>
+                </article>
+                <article class="cv-entry">
+                  <div class="cv-entry__head">
+                    <h3 class="cv-entry__role">Marketing and Media Intern</h3>
+                    <span class="cv-entry__date">Jun. 2023 — Aug. 2023</span>
+                  </div>
+                  <p class="cv-entry__org">Boathouse Group Inc. · Waltham, MA</p>
+                  <ul>
+                    <li>Led media optimization analysis for the Story District Promotion Campaign.</li>
+                    <li>Produced a strategic media plan selected by the client over competing proposals.</li>
+                  </ul>
+                </article>
+                <article class="cv-entry">
+                  <div class="cv-entry__head">
+                    <h3 class="cv-entry__role">Associate Producer</h3>
+                    <span class="cv-entry__date">Mar. 2023 — May 2024</span>
+                  </div>
+                  <p class="cv-entry__org">Orange Television Network · Syracuse, NY</p>
+                  <ul>
+                    <li>Directed visual storytelling and on-set operations for <em>Psych vs. Star</em>.</li>
+                    <li>Managed post-production quality control and production schedules for broadcast delivery.</li>
+                  </ul>
+                </article>
+              </section>
+
+              <section class="cv-section" id="language">
+                <h2 class="cv-section__title">
+                  <span class="material-symbols-outlined" aria-hidden="true">translate</span>
+                  Language
+                </h2>
+                <div class="cv-lang">
+                  <span><strong>Chinese (Mandarin):</strong> Native</span>
+                  <span><strong>English:</strong> Fluent</span>
+                </div>
+              </section>
+            </div>
+          </div>
         </div>
-      </article>
-    </div>
+      </main>
 
-    <div class="page__footer">
-      <footer>
-        <div class="page__footer-copyright">
-          <span data-site-footer-copyright></span><br>
-          <span data-site-footer-updated></span>
+      <footer class="site-footer">
+        <div class="site-container site-footer__inner">
+          <div>
+            <p class="site-footer__brand" data-site-text="person.displayName">Hanyi Xu</p>
+            <p class="site-footer__copy"><span data-site-footer-copyright></span></p>
+            <p class="site-footer__updated"><span data-site-footer-updated></span></p>
+          </div>
+          <nav class="site-footer__links" aria-label="Footer">
+            <a href="https://github.com/hanyixu" data-site-href="links.github">GitHub</a>
+            <a href="https://www.linkedin.com/in/xuhanyi" data-site-href="links.linkedin">LinkedIn</a>
+            <a href="https://orcid.org/0009-0002-0257-3630" data-site-href="links.orcid">ORCID</a>
+            <a href="mailto:hx26@fsu.edu" data-site-email="links.email">Email</a>
+          </nav>
         </div>
       </footer>
     </div>
 
     <script src="./assets/js/apply-site-config.js"></script>
-    <script src="./assets/js/main.min.js"></script>
+    <script src="./assets/js/site.js?v=20260525"></script>
   </body>
 </html>

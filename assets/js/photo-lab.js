@@ -69,12 +69,12 @@
 
   function renderFilters(items) {
     const tags = getAllTags(items);
+    if (tags.length === 0) {
+      filtersEl.innerHTML = '';
+      return;
+    }
+
     const parts = [];
-
-    parts.push(
-      `<button type="button" class="photo-lab__filter ${activeTag === null ? 'is-active' : ''}" data-tag="">All</button>`
-    );
-
     for (const t of tags) {
       const isActive = activeTag === t;
       parts.push(
@@ -138,12 +138,10 @@
 
     const it = visibleItems[activeIndex];
     const src = it.src || it.thumb || './assets/img/photo-lab/placeholder.svg';
-    const title = it.title ? String(it.title) : '';
-    const meta = formatMeta(it);
 
     lightboxImg.src = src;
-    lightboxImg.alt = it.alt ? String(it.alt) : title || 'Photo';
-    lightboxCaption.textContent = [title, meta].filter(Boolean).join(' — ');
+    lightboxImg.alt = it.alt ? String(it.alt) : 'Photo';
+    lightboxCaption.textContent = '';
 
     document.body.classList.add('overflow--hidden');
     lightboxEl.classList.remove('hidden');

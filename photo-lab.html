@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" class="no-js">
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <link rel="icon" href="./assets/img/favicon.png" type="image/png" sizes="32x32">
@@ -7,94 +7,75 @@
     <title data-page-title="Photo Lab">Photo Lab - Hanyi Xu</title>
     <meta name="description" content="Photography works by Hanyi Xu" data-site-content="site.photoLabMetaDescription">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="cleartype" content="on">
-    <script>
-      document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
-    </script>
-    <link rel="preload" href="./assets/fonts/Lato/Lato-Light.ttf" as="font" type="font/ttf" crossorigin>
-    <link rel="preload" href="./assets/fonts/Lato/Lato-Regular.ttf" as="font" type="font/ttf" crossorigin>
-    <link rel="stylesheet" href="./assets/css/lato-fonts.css?v=20260503">
-    <link rel="stylesheet" href="./assets/css/fontawesome-all.min.css">
-    <link rel="stylesheet" href="./assets/css/main.css?v=20260532">
-    <link rel="stylesheet" href="./assets/css/academicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600&family=JetBrains+Mono:wght@500&family=Manrope:wght@600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/design.css?v=20260525">
   </head>
-  <body class="photo-lab--clean">
-    <div class="masthead">
-      <div class="masthead__inner-wrap">
-        <div class="masthead__menu">
-          <nav id="site-nav" class="greedy-nav">
-            <button><div class="navicon"></div></button>
-            <ul class="visible-links">
-              <li class="masthead__menu-item"><a href="./index.html">Home</a></li>
-              <li class="masthead__menu-item"><a href="./research.html">Research</a></li>
-              <li class="masthead__menu-item"><a href="./publications.html">Publications</a></li>
-              <li class="masthead__menu-item"><a href="./cv.html">CV</a></li>
-              <li class="masthead__menu-item"><a href="./photo-lab.html">Photo Lab</a></li>
-            </ul>
-            <ul class="hidden-links hidden"></ul>
-          </nav>
+  <body class="photo-lab-page">
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="site-brand" href="./index.html" data-site-text="person.displayName">Hanyi Xu</a>
+        <nav class="site-nav" aria-label="Main">
+          <a href="./index.html">Home</a>
+          <a href="./research.html">Research</a>
+          <a href="./publications.html">Publications</a>
+          <a href="./cv.html">CV</a>
+          <a href="./photo-lab.html" class="is-active" aria-current="page">Photo Lab</a>
+        </nav>
+        <div class="site-header__actions">
+          <a class="site-header__mail" href="mailto:hx26@fsu.edu" data-site-email="links.email" aria-label="Email">
+            <span class="material-symbols-outlined" aria-hidden="true">mail</span>
+          </a>
+          <button type="button" class="site-menu-toggle" data-site-menu-toggle aria-expanded="false" aria-label="Open menu">
+            <span class="material-symbols-outlined" aria-hidden="true">menu</span>
+          </button>
         </div>
       </div>
-    </div>
+      <nav class="site-mobile-nav" data-site-mobile-nav aria-label="Mobile">
+        <a href="./index.html">Home</a>
+        <a href="./research.html">Research</a>
+        <a href="./publications.html">Publications</a>
+        <a href="./cv.html">CV</a>
+        <a href="./photo-lab.html" class="is-active" aria-current="page">Photo Lab</a>
+      </nav>
+    </header>
 
-    <div id="main" role="main">
-      <div class="sidebar sticky">
-        <div itemscope itemtype="http://schema.org/Person">
-          <div class="author__avatar">
-            <img src="./images/profile.jpeg" class="author__avatar" alt="Hanyi Xu" data-site-src="profiles.avatarPath" data-site-alt="profiles.avatarAlt">
-          </div>
-
-          <div class="author__content">
-            <h3 class="author__name" data-site-text="person.displayName">Hanyi Xu</h3>
-            <p class="author__pronouns" data-site-text="person.pronouns">He/Him/His</p>
-          </div>
-
-          <div class="author__urls-wrapper">
-            <button class="btn btn--inverse">Follow</button>
-            <ul class="author__urls social-icons">
-              <li class="author__desktop"><i class="fa-solid fa-location-dot icon-pad-right" aria-hidden="true"></i><span data-site-text="person.location">Ningbo, China</span></li>
-              <li class="author__desktop"><i class="fas fa-fw fa-building-columns icon-pad-right" aria-hidden="true"></i><span data-site-text="person.affiliation">Florida State University</span></li>
-              <li><a href="mailto:hx26@fsu.edu" data-site-email="links.email"><i class="fas fa-fw fa-envelope icon-pad-right" aria-hidden="true"></i>Email</a></li>
-              <li><a href="https://orcid.org/0009-0002-0257-3630" data-site-href="links.orcid"><i class="ai ai-orcid ai-fw icon-pad-right"></i>ORCID</a></li>
-              <li><a href="https://github.com/hanyixu" data-site-href="links.github"><i class="fab fa-fw fa-github icon-pad-right" aria-hidden="true"></i>GitHub</a></li>
-              <li><a href="https://www.linkedin.com/in/xuhanyi" data-site-href="links.linkedin"><i class="fab fa-fw fa-linkedin icon-pad-right" aria-hidden="true"></i>LinkedIn</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <article class="page photo-lab is-clean" itemscope itemtype="http://schema.org/CreativeWork">
-        <meta itemprop="headline" content="Photo Lab">
-        <meta itemprop="description" content="Photography works by Hanyi Xu" data-site-content="site.photoLabMetaDescription">
-        <div class="page__inner-wrap">
-          <header>
-            <h1 class="page__title" itemprop="headline">Photo Lab</h1>
-            <p class="page__lead">A gallery of my photography experiments, series, and visual notes.</p>
+    <div class="site-shell">
+      <main class="site-main">
+        <div class="site-container page-content">
+          <header class="page-hero fade-in">
+            <h1 class="text-display">Photo Lab</h1>
+            <p class="text-body-lg" data-site-content="photoLab.intro">A collection of visual explorations—moments of symmetry, light, and structured chaos in the built environment and beyond.</p>
           </header>
 
-          <section class="page__content" itemprop="text">
-            <div class="photo-lab__controls" aria-label="Photo filters">
-              <div class="photo-lab__filters" id="photo-lab-filters"></div>
-              <div class="photo-lab__meta" id="photo-lab-meta" aria-live="polite"></div>
-            </div>
+          <div class="photo-lab__controls fade-in" aria-label="Photo filters">
+            <div class="photo-lab__filters" id="photo-lab-filters"></div>
+            <div class="photo-lab__meta" id="photo-lab-meta" aria-live="polite"></div>
+          </div>
 
-            <div class="photo-lab__grid" id="photo-lab-grid" aria-label="Photo gallery"></div>
+          <div class="photo-lab__grid fade-in" id="photo-lab-grid" aria-label="Photo gallery"></div>
 
-            <div class="photo-lab__empty hidden" id="photo-lab-empty">
-              <p>No photos match this filter yet.</p>
-            </div>
-          </section>
-
-          <footer class="page__meta"></footer>
+          <div class="photo-lab__empty hidden" id="photo-lab-empty">
+            <p>No photos match this filter yet.</p>
+          </div>
         </div>
-      </article>
-    </div>
+      </main>
 
-    <div class="page__footer">
-      <footer>
-        <div class="page__footer-copyright">
-          <span data-site-footer-copyright></span><br>
-          <span data-site-footer-updated></span>
+      <footer class="site-footer">
+        <div class="site-container site-footer__inner">
+          <div>
+            <p class="site-footer__brand" data-site-text="person.displayName">Hanyi Xu</p>
+            <p class="site-footer__copy"><span data-site-footer-copyright></span></p>
+            <p class="site-footer__updated"><span data-site-footer-updated></span></p>
+          </div>
+          <nav class="site-footer__links" aria-label="Footer">
+            <a href="https://github.com/hanyixu" data-site-href="links.github">GitHub</a>
+            <a href="https://www.linkedin.com/in/xuhanyi" data-site-href="links.linkedin">LinkedIn</a>
+            <a href="https://orcid.org/0009-0002-0257-3630" data-site-href="links.orcid">ORCID</a>
+            <a href="mailto:hx26@fsu.edu" data-site-email="links.email">Email</a>
+          </nav>
         </div>
       </footer>
     </div>
@@ -299,7 +280,7 @@
     </script>
 
     <script src="./assets/js/apply-site-config.js"></script>
-    <script src="./assets/js/main.min.js?v=20260501"></script>
-    <script src="./assets/js/photo-lab.js?v=20260501"></script>
+    <script src="./assets/js/site.js?v=20260525"></script>
+    <script src="./assets/js/photo-lab.js?v=20260525b"></script>
   </body>
 </html>

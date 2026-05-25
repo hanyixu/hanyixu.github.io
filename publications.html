@@ -1,176 +1,239 @@
 <!doctype html>
-<html lang="en" class="no-js">
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <link rel="icon" href="./assets/img/favicon.png" type="image/png" sizes="32x32">
     <link rel="apple-touch-icon" href="./assets/img/favicon.png">
-    <title data-page-title="Publications & Presentations">Publications & Presentations - Hanyi Xu</title>
+    <title data-page-title="Publications">Publications - Hanyi Xu</title>
     <meta name="description" content="PhD Student at Florida State University" data-site-content="site.defaultMetaDescription">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="cleartype" content="on">
-    <script>
-      document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
-    </script>
-    <link rel="preload" href="./assets/fonts/Lato/Lato-Light.ttf" as="font" type="font/ttf" crossorigin>
-    <link rel="preload" href="./assets/fonts/Lato/Lato-Regular.ttf" as="font" type="font/ttf" crossorigin>
-    <link rel="stylesheet" href="./assets/css/lato-fonts.css?v=20260503">
-    <link rel="stylesheet" href="./assets/css/fontawesome-all.min.css">
-    <link rel="stylesheet" href="./assets/css/main.css?v=20260532">
-    <link rel="stylesheet" href="./assets/css/academicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600&family=JetBrains+Mono:wght@500&family=Manrope:wght@600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/design.css?v=20260525">
   </head>
   <body>
-    <div class="masthead">
-      <div class="masthead__inner-wrap">
-        <div class="masthead__menu">
-          <nav id="site-nav" class="greedy-nav">
-            <button><div class="navicon"></div></button>
-            <ul class="visible-links">
-              <li class="masthead__menu-item"><a href="./index.html">Home</a></li>
-              <li class="masthead__menu-item"><a href="./research.html">Research</a></li>
-              <li class="masthead__menu-item"><a href="./publications.html">Publications</a></li>
-              <li class="masthead__menu-item"><a href="./cv.html">CV</a></li>
-              <li class="masthead__menu-item"><a href="./photo-lab.html">Photo Lab</a></li>
-            </ul>
-            <ul class="hidden-links hidden"></ul>
-          </nav>
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="site-brand" href="./index.html" data-site-text="person.displayName">Hanyi Xu</a>
+        <nav class="site-nav" aria-label="Main">
+          <a href="./index.html">Home</a>
+          <a href="./research.html">Research</a>
+          <a href="./publications.html" class="is-active" aria-current="page">Publications</a>
+          <a href="./cv.html">CV</a>
+          <a href="./photo-lab.html">Photo Lab</a>
+        </nav>
+        <div class="site-header__actions">
+          <a class="site-header__mail" href="mailto:hx26@fsu.edu" data-site-email="links.email" aria-label="Email">
+            <span class="material-symbols-outlined" aria-hidden="true">mail</span>
+          </a>
+          <button type="button" class="site-menu-toggle" data-site-menu-toggle aria-expanded="false" aria-label="Open menu">
+            <span class="material-symbols-outlined" aria-hidden="true">menu</span>
+          </button>
         </div>
       </div>
-    </div>
+      <nav class="site-mobile-nav" data-site-mobile-nav aria-label="Mobile">
+        <a href="./index.html">Home</a>
+        <a href="./research.html">Research</a>
+        <a href="./publications.html" class="is-active" aria-current="page">Publications</a>
+        <a href="./cv.html">CV</a>
+        <a href="./photo-lab.html">Photo Lab</a>
+      </nav>
+    </header>
 
-    <div id="main" role="main">
-      <div class="sidebar sticky">
-        <div itemscope itemtype="http://schema.org/Person">
-          <div class="author__avatar">
-            <img src="./images/profile.jpeg" class="author__avatar" alt="Hanyi Xu" data-site-src="profiles.avatarPath" data-site-alt="profiles.avatarAlt">
-          </div>
-
-          <div class="author__content">
-            <h3 class="author__name" data-site-text="person.displayName">Hanyi Xu</h3>
-            <p class="author__pronouns" data-site-text="person.pronouns">He/Him/His</p>
-          </div>
-
-          <div class="author__urls-wrapper">
-            <button class="btn btn--inverse">Follow</button>
-            <ul class="author__urls social-icons">
-              <li class="author__desktop"><i class="fa-solid fa-location-dot icon-pad-right" aria-hidden="true"></i><span data-site-text="person.location">Ningbo, China</span></li>
-              <li class="author__desktop"><i class="fas fa-fw fa-building-columns icon-pad-right" aria-hidden="true"></i><span data-site-text="person.affiliation">Florida State University</span></li>
-              <li><a href="mailto:hx26@fsu.edu" data-site-email="links.email"><i class="fas fa-fw fa-envelope icon-pad-right" aria-hidden="true"></i>Email</a></li>
-              <li><a href="https://orcid.org/0009-0002-0257-3630" data-site-href="links.orcid"><i class="ai ai-orcid ai-fw icon-pad-right"></i>ORCID</a></li>
-              <li><a href="https://github.com/hanyixu" data-site-href="links.github"><i class="fab fa-fw fa-github icon-pad-right" aria-hidden="true"></i>GitHub</a></li>
-              <li><a href="https://www.linkedin.com/in/xuhanyi" data-site-href="links.linkedin"><i class="fab fa-fw fa-linkedin icon-pad-right" aria-hidden="true"></i>LinkedIn</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <article class="page page-publications" itemscope itemtype="http://schema.org/CreativeWork">
-        <meta itemprop="headline" content="Publications & Presentations">
-        <meta itemprop="description" content="Publications and presentations">
-        <div class="page__inner-wrap">
-          <header>
-            <h1 class="page__title" itemprop="headline">Publications & Presentations</h1>
+    <div class="site-shell">
+      <main class="site-main">
+        <div class="site-container page-content">
+          <header class="page-hero fade-in">
+            <h1 class="text-display">Publications</h1>
+            <p class="text-body-lg" data-site-content="publications.intro">A collection of peer-reviewed journal articles, conference proceedings, and collaborative research spanning Human-Computer Interaction, Social Computing, and Interactive Media.</p>
           </header>
 
-          <section class="page__content" itemprop="text">
-<h2>Manuscripts</h2>
+          <div class="pub-layout fade-in">
+            <aside class="pub-sidebar" aria-label="Publication filters">
+              <div class="pub-sidebar__group">
+                <h3 class="pub-sidebar__title">Browse</h3>
+                <ul>
+                  <li><a href="#manuscripts">Manuscripts</a></li>
+                  <li><a href="#presentations">Presentations</a></li>
+                </ul>
+              </div>
+              <div class="pub-sidebar__group">
+                <h3 class="pub-sidebar__title">Profiles</h3>
+                <ul>
+                  <li><a href="https://orcid.org/0009-0002-0257-3630" data-site-href="links.orcid">ORCID Profile</a></li>
+                </ul>
+              </div>
+            </aside>
 
-<div class="pub-item">
-  <div class="pub-left">
-    <div class="pub-title">Why Games Stop Feeling Fun: A Computational Approach to Emotional Demand in Play</div>
-    <div class="pub-authors">Xu, H.</div>
-    <div class="pub-meta">M.A. Thesis, Columbia University. January 2026</div>
-    <div><a href="https://doi.org/10.7916/3mm4-3482"><i class="fas fa-link link-inline-icon" aria-hidden="true"></i>Link</a></div>
-  </div>
-  <div class="pub-year">2026</div>
-</div>
+            <div class="pub-list">
+              <section id="manuscripts" class="pub-year">
+                <div class="pub-year__header">
+                  <h2 class="text-headline">Manuscripts</h2>
+                </div>
 
-<div class="pub-item">
-  <div class="pub-left">
-    <div class="pub-title">Emotions in social justice mathematics: Students' experience from a college precalculus classroom</div>
-    <div class="pub-authors">Xu, H., Raja, W., Boutros, E., Wu, Q., &amp; Fonger, N. L.</div>
-    <div class="pub-meta">Paper presented at the 46th Annual Meeting of the North American Chapter of the International Group for the Psychology of Mathematics Education, Cleveland, OH. November 2024</div>
-    <div><a href="./files/paper-pmena-2024.pdf"><i class="fas fa-link link-inline-icon" aria-hidden="true"></i>Link</a> | <a href="./files/slides-pmena-2024.pdf"><i class="fas fa-link link-inline-icon" aria-hidden="true"></i>Slides</a></div>
-  </div>
-  <div class="pub-year">2024</div>
-</div>
+                <article class="pub-card">
+                  <div class="pub-card__inner">
+                    <div>
+                      <div class="pub-card__tags">
+                        <span class="pub-badge">Manuscript</span>
+                        <span class="pub-badge pub-badge--muted">2026</span>
+                      </div>
+                      <h3 class="pub-card__title">Why Games Stop Feeling Fun: A Computational Approach to Emotional Demand in Play</h3>
+                      <p class="pub-card__authors"><span class="author-self">Xu, H.</span></p>
+                      <p class="pub-card__meta">M.A. Thesis, Columbia University · January 2026</p>
+                      <div class="pub-card__links">
+                        <a href="https://doi.org/10.7916/3mm4-3482"><span class="material-symbols-outlined" aria-hidden="true">link</span> DOI</a>
+                      </div>
+                    </div>
+                  </div>
+                </article>
 
-<div class="pub-item">
-  <div class="pub-left">
-    <div class="pub-title">Making mathematics meaningful: How learning about local social injustices develops undergraduate students' identity, intellect, skill, and criticality</div>
-    <div class="pub-authors">Boutros, E., Wu, Q., Xu, H., &amp; Fonger, N. L.</div>
-    <div class="pub-meta">The Crown: Syracuse Undergraduate Research Journal, 1, Article 16. August 2023</div>
-    <div><a href="https://surface.syr.edu/thecrown/vol1/iss1/16"><i class="fas fa-link link-inline-icon" aria-hidden="true"></i>Link</a></div>
-  </div>
-  <div class="pub-year">2023</div>
-</div>
+                <article class="pub-card">
+                  <div class="pub-card__inner">
+                    <div>
+                      <div class="pub-card__tags">
+                        <span class="pub-badge">Manuscript</span>
+                        <span class="pub-badge pub-badge--muted">PME-NA 2024</span>
+                      </div>
+                      <h3 class="pub-card__title">Emotions in social justice mathematics: Students' experience from a college precalculus classroom</h3>
+                      <p class="pub-card__authors"><span class="author-self">Xu, H.</span>, Raja, W., Boutros, E., Wu, Q., &amp; Fonger, N. L.</p>
+                      <p class="pub-card__meta">Paper presented at PME-NA, Cleveland, OH · November 2024</p>
+                      <div class="pub-card__links">
+                        <a href="./files/paper-pmena-2024.pdf"><span class="material-symbols-outlined" aria-hidden="true">picture_as_pdf</span> Paper</a>
+                        <a href="./files/slides-pmena-2024.pdf"><span class="material-symbols-outlined" aria-hidden="true">slideshow</span> Slides</a>
+                      </div>
+                    </div>
+                    <div class="pub-card__actions">
+                      <a class="btn btn--primary" href="./files/paper-pmena-2024.pdf">PDF</a>
+                    </div>
+                  </div>
+                </article>
 
-<hr>
+                <article class="pub-card">
+                  <div class="pub-card__inner">
+                    <div>
+                      <div class="pub-card__tags">
+                        <span class="pub-badge">Manuscript</span>
+                        <span class="pub-badge pub-badge--muted">The Crown</span>
+                      </div>
+                      <h3 class="pub-card__title">Making mathematics meaningful: How learning about local social injustices develops undergraduate students' identity, intellect, skill, and criticality</h3>
+                      <p class="pub-card__authors">Boutros, E., Wu, Q., <span class="author-self">Xu, H.</span>, &amp; Fonger, N. L.</p>
+                      <p class="pub-card__meta">The Crown: Syracuse Undergraduate Research Journal · August 2023</p>
+                      <div class="pub-card__links">
+                        <a href="https://surface.syr.edu/thecrown/vol1/iss1/16"><span class="material-symbols-outlined" aria-hidden="true">link</span> Link</a>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </section>
 
-<h2>Presentations</h2>
+              <section id="presentations" class="pub-year">
+                <div class="pub-year__header">
+                  <h2 class="text-headline">Presentations</h2>
+                </div>
 
-<div class="pub-item">
-  <div class="pub-left">
-    <div class="pub-title">Electrophysiological and behavioral indices of numerical perception and cognition</div>
-    <div class="pub-authors">Rhee, V., Chen, Z., Gushiken, Y., Bakhru, K., Xu, H., Bisbee, N., Li, Y., Tang, J. E., &amp; Gordon, P.</div>
-    <div class="pub-meta">Poster presented at the Annual Meeting of the Cognitive Neuroscience Society, Vancouver, Canada. March 2026</div>
-    <div><a href="./files/CNS2026.pdf"><i class="fas fa-link link-inline-icon" aria-hidden="true"></i>Link</a></div>
-  </div>
-  <div class="pub-year">2026</div>
-</div>
+                <div class="pub-year">
+                  <div class="pub-year__header">
+                    <h3 class="text-label text-muted">2026</h3>
+                    <span class="pub-year__count">2 items</span>
+                  </div>
 
-<div class="pub-item">
-  <div class="pub-left">
-    <div class="pub-title">Making mathematics meaningful: A mixed-methods study of undergraduate students' learning through social justice</div>
-    <div class="pub-authors">Xu, H.</div>
-    <div class="pub-meta">Paper presented at the 18th Annual ACC Meeting of the Minds Conference, South Bend, IN. April 2024</div>
-    <div><a href="./files/slides-ACCMOM-2024.pdf"><i class="fas fa-link link-inline-icon" aria-hidden="true"></i>Link</a></div>
-  </div>
-  <div class="pub-year">2024</div>
-</div>
+                  <article class="pub-card">
+                    <div class="pub-card__tags">
+                      <span class="pub-badge">Presentation</span>
+                      <span class="pub-badge pub-badge--muted">CNS 2026</span>
+                    </div>
+                    <h3 class="pub-card__title">Electrophysiological and behavioral indices of numerical perception and cognition</h3>
+                    <p class="pub-card__authors">Rhee, V., Chen, Z., Gushiken, Y., Bakhru, K., <span class="author-self">Xu, H.</span>, Bisbee, N., Li, Y., Tang, J. E., &amp; Gordon, P.</p>
+                    <p class="pub-card__meta"><span class="material-symbols-outlined" aria-hidden="true">pin_drop</span> Vancouver, Canada · March 2026</p>
+                    <div class="pub-card__links">
+                      <a href="./files/CNS2026.pdf"><span class="material-symbols-outlined" aria-hidden="true">picture_as_pdf</span> Poster PDF</a>
+                    </div>
+                  </article>
+                </div>
 
-<div class="pub-item">
-  <div class="pub-left">
-    <div class="pub-title">Making mathematics meaningful: How learning about local social injustices develops undergraduate students' identity, intellect, skill, and criticality</div>
-    <div class="pub-authors">Boutros, E., Fonger, N. L., Wu, Q., &amp; Xu, H.</div>
-    <div class="pub-meta">Paper presented at the SOURCE Fall Expo, Syracuse University. December 2023</div>
-  </div>
-  <div class="pub-year">2023</div>
-</div>
+                <div class="pub-year">
+                  <div class="pub-year__header">
+                    <h3 class="text-label text-muted">2024</h3>
+                    <span class="pub-year__count">1 item</span>
+                  </div>
 
-<div class="pub-item">
-  <div class="pub-left">
-    <div class="pub-title">Enhancing students' inclusion and belonging by developing meaningful mathematics literacy in the place we now call home</div>
-    <div class="pub-authors">Boutros, E., Fonger, N. L., Wu, Q., &amp; Xu, H.</div>
-    <div class="pub-meta">Paper presented at the D.E.I.A. Symposium, Syracuse University. October 2023</div>
-  </div>
-  <div class="pub-year">2023</div>
-</div>
+                  <article class="pub-card">
+                    <div class="pub-card__tags">
+                      <span class="pub-badge">Presentation</span>
+                      <span class="pub-badge pub-badge--muted">ACC Meeting of the Minds</span>
+                    </div>
+                    <h3 class="pub-card__title">Making mathematics meaningful: A mixed-methods study of undergraduate students' learning through social justice</h3>
+                    <p class="pub-card__authors"><span class="author-self">Xu, H.</span></p>
+                    <p class="pub-card__meta">South Bend, IN · April 2024</p>
+                    <div class="pub-card__links">
+                      <a href="./files/slides-ACCMOM-2024.pdf"><span class="material-symbols-outlined" aria-hidden="true">slideshow</span> Slides</a>
+                    </div>
+                  </article>
+                </div>
 
-<div class="pub-item">
-  <div class="pub-left">
-    <div class="pub-title">Making mathematics meaningful: How learning about local injustices develops undergraduate students' criticality, identities, intellect, skill, and emotion</div>
-    <div class="pub-authors">Boutros, E., Fonger, N. L., Wu, Q., &amp; Xu, H.</div>
-    <div class="pub-meta">Poster session presented at the SOURCE Symposium, Syracuse University. August 2023</div>
-  </div>
-  <div class="pub-year">2023</div>
-</div>
-          </section>
+                <div class="pub-year">
+                  <div class="pub-year__header">
+                    <h3 class="text-label text-muted">2023</h3>
+                    <span class="pub-year__count">3 items</span>
+                  </div>
 
-          <footer class="page__meta"></footer>
+                  <article class="pub-card">
+                    <div class="pub-card__tags">
+                      <span class="pub-badge">Presentation</span>
+                      <span class="pub-badge pub-badge--muted">SOURCE Fall 2023</span>
+                    </div>
+                    <h3 class="pub-card__title">Making mathematics meaningful: How learning about local social injustices develops undergraduate students' identity, intellect, skill, and criticality</h3>
+                    <p class="pub-card__authors">Boutros, E., Fonger, N. L., Wu, Q., &amp; <span class="author-self">Xu, H.</span></p>
+                    <p class="pub-card__meta">Syracuse University · December 2023</p>
+                  </article>
+
+                  <article class="pub-card">
+                    <div class="pub-card__tags">
+                      <span class="pub-badge">Presentation</span>
+                      <span class="pub-badge pub-badge--muted">D.E.I.A. Symposium</span>
+                    </div>
+                    <h3 class="pub-card__title">Enhancing students' inclusion and belonging by developing meaningful mathematics literacy in the place we now call home</h3>
+                    <p class="pub-card__authors">Boutros, E., Fonger, N. L., Wu, Q., &amp; <span class="author-self">Xu, H.</span></p>
+                    <p class="pub-card__meta">Syracuse University · October 2023</p>
+                  </article>
+
+                  <article class="pub-card">
+                    <div class="pub-card__tags">
+                      <span class="pub-badge">Presentation</span>
+                      <span class="pub-badge pub-badge--muted">SOURCE Symposium</span>
+                    </div>
+                    <h3 class="pub-card__title">Making mathematics meaningful: How learning about local injustices develops undergraduate students' criticality, identities, intellect, skill, and emotion</h3>
+                    <p class="pub-card__authors">Boutros, E., Fonger, N. L., Wu, Q., &amp; <span class="author-self">Xu, H.</span></p>
+                    <p class="pub-card__meta">Poster · Syracuse University · August 2023</p>
+                  </article>
+                </div>
+              </section>
+            </div>
+          </div>
         </div>
-      </article>
-    </div>
+      </main>
 
-    <div class="page__footer">
-      <footer>
-        <div class="page__footer-copyright">
-          <span data-site-footer-copyright></span><br>
-          <span data-site-footer-updated></span>
+      <footer class="site-footer">
+        <div class="site-container site-footer__inner">
+          <div>
+            <p class="site-footer__brand" data-site-text="person.displayName">Hanyi Xu</p>
+            <p class="site-footer__copy"><span data-site-footer-copyright></span></p>
+            <p class="site-footer__updated"><span data-site-footer-updated></span></p>
+          </div>
+          <nav class="site-footer__links" aria-label="Footer">
+            <a href="https://github.com/hanyixu" data-site-href="links.github">GitHub</a>
+            <a href="https://www.linkedin.com/in/xuhanyi" data-site-href="links.linkedin">LinkedIn</a>
+            <a href="https://orcid.org/0009-0002-0257-3630" data-site-href="links.orcid">ORCID</a>
+            <a href="mailto:hx26@fsu.edu" data-site-email="links.email">Email</a>
+          </nav>
         </div>
       </footer>
     </div>
 
     <script src="./assets/js/apply-site-config.js"></script>
-    <script src="./assets/js/main.min.js"></script>
+    <script src="./assets/js/site.js?v=20260525"></script>
   </body>
 </html>

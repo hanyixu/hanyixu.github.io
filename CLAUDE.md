@@ -11,7 +11,7 @@ Hanyi Xu's personal academic website — a static site hosted on GitHub Pages at
 - `index.html` — Home / About Me
 - `research.html` — Research interests and master's thesis summary
 - `publications.html` — Manuscripts and presentations
-- `cv.html` — CV download page (links `files/CV_HanyiXu.pdf`)
+- `cv.html` — Full web CV (education, experience, publications, etc.) with PDF download (`files/CV_HanyiXu.pdf`)
 - `photo-lab.html` — Client-side photography gallery with filtering and lightbox
 
 ## Centralized Config
@@ -31,11 +31,12 @@ Hanyi Xu's personal academic website — a static site hosted on GitHub Pages at
 
 ## CSS and Assets
 
-- `assets/css/main.css` — main stylesheet (custom properties at `:root` for colors)
-- `assets/css/lato-fonts.css` — self-hosted Lato @font-face declarations
-- Lato font files in `assets/fonts/Lato/` (Light and Regular for body, Thin for titles)
-- `assets/css/fontawesome-all.min.css` and `assets/css/academicons.min.css` — icon libraries
-- `assets/js/main.min.js` — minified JS for nav/responsive behavior (from academic template)
+- `assets/css/design.css` — main stylesheet (Academic Minimalist design system: teal palette, Manrope/Hanken Grotesk/JetBrains Mono via Google Fonts, Material Symbols)
+- `assets/js/site.js` — mobile nav toggle and scroll fade-in animations
+- `assets/css/main.css` — legacy academic template styles (kept in repo; pages use `design.css`)
+- `assets/css/lato-fonts.css` — legacy self-hosted Lato (unused by current pages)
+- `assets/css/fontawesome-all.min.css` and `assets/css/academicons.min.css` — legacy icon libraries
+- `assets/js/main.min.js` — legacy nav script (unused by current pages)
 - `assets/img/favicon.png` — favicon linked in all pages
 - CSS/JS cache busted with `?v=YYYYMMDD` query strings
 
