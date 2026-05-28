@@ -969,10 +969,22 @@ a:hover {
 
 /* CV page */
 .cv-page-header {
+  --cv-title-leading-gap: calc(0.67 * clamp(2.25rem, 5vw, 3rem));
   display: flex;
   flex-direction: column;
   gap: var(--stack-md);
   margin-bottom: var(--stack-lg);
+}
+
+.cv-page-header__text .text-body-lg {
+  margin: 0;
+}
+
+.cv-page-header__download {
+  align-self: flex-start;
+  padding: var(--stack-md) 2.25rem;
+  border: 1px solid rgba(111, 121, 122, 0.22);
+  border-radius: var(--radius-xl);
 }
 
 @media (min-width: 768px) {
@@ -990,6 +1002,7 @@ a:hover {
 
   .cv-page-header__download {
     flex-shrink: 0;
+    margin-top: calc(var(--cv-title-leading-gap) + var(--stack-sm));
   }
 }
 
@@ -1137,15 +1150,7 @@ a:hover {
 }
 
 .cv-edu-item {
-  background: var(--color-background-subtle);
-  border: 1px solid var(--color-border-light);
-  border-radius: var(--radius-xl);
   padding: 1.5rem;
-  transition: box-shadow var(--transition);
-}
-
-.cv-edu-item:hover {
-  box-shadow: var(--shadow-ambient);
 }
 
 .cv-edu-item__date {
@@ -1175,17 +1180,20 @@ a:hover {
   font-style: italic;
 }
 
-.cv-entry {
+.cv-entry,
+.cv-edu-item,
+.cv-teaching-item {
   position: relative;
   overflow: hidden;
   border: 1px solid var(--color-border-light);
   border-radius: var(--radius-xl);
-  padding: 1.5rem;
   background: var(--color-surface-lowest);
   transition: background var(--transition), box-shadow var(--transition);
 }
 
-.cv-entry::before {
+.cv-entry::before,
+.cv-edu-item::before,
+.cv-teaching-item::before {
   content: "";
   position: absolute;
   left: 0;
@@ -1198,13 +1206,21 @@ a:hover {
   transition: transform var(--transition);
 }
 
-.cv-entry:hover {
+.cv-entry:hover,
+.cv-edu-item:hover,
+.cv-teaching-item:hover {
   background: var(--color-background-subtle);
   box-shadow: var(--shadow-ambient);
 }
 
-.cv-entry:hover::before {
+.cv-entry:hover::before,
+.cv-edu-item:hover::before,
+.cv-teaching-item:hover::before {
   transform: scaleY(1);
+}
+
+.cv-entry {
+  padding: 1.5rem;
 }
 
 .cv-entry + .cv-entry {
@@ -1296,13 +1312,6 @@ a:hover {
   display: flex;
   gap: 1rem;
   padding: 1rem 1.25rem;
-  border: 1px solid var(--color-border-light);
-  border-radius: var(--radius-xl);
-  transition: background var(--transition);
-}
-
-.cv-teaching-item:hover {
-  background: var(--color-background-subtle);
 }
 
 .cv-teaching-item .material-symbols-outlined {
