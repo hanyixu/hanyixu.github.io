@@ -20,13 +20,13 @@
     "defaultMetaDescription": "PhD Student at Florida State University",
     "photoLabMetaDescription": "Photography works by Hanyi Xu",
     "copyrightYear": 2026,
-    "lastUpdatedLabel": "May 2026"
+    "lastUpdatedLabel": "June 2026"
   },
   "cv": {
     "filePath": "./files/CV_HanyiXu.pdf",
     "fileName": "CV_HanyiXu.pdf",
-    "lastUpdated": "2026-05",
-    "fileSizeLabel": "68KB",
+    "lastUpdated": "2026-06",
+    "fileSizeLabel": "65KB",
     "fileType": "PDF"
   },
   "about": {
@@ -53,7 +53,7 @@
   },
   "research": {
     "overview": "My research focuses on how interactive media, especially video games and immersive technologies such as VR and AR, influence users\u2019 stress, motivation, and emotional well-being.",
-    "tagline": "How interactive media shape users\u2019 stress, motivation, and well-being. Studying when enjoyable experiences become demanding and how design can support both engagement and restoration."
+    "tagline": "My research examines how interactive media shape users\u2019 stress, motivation, and well-being. I study when enjoyable experiences become demanding and how design can support both engagement and restoration."
   },
   "publications": {
     "intro": "A collection of peer-reviewed journal articles, conference proceedings, and collaborative research spanning Human-Computer Interaction, Social Computing, and Interactive Media."
