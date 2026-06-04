@@ -1643,6 +1643,21 @@ a:hover {
   text-decoration: underline;
 }
 
+.site-footer__links .site-footer__icon-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+
+.site-footer__links .site-footer__icon-link:hover {
+  text-decoration: none;
+}
+
+.site-footer__links .site-footer__icon-link .fa-brands {
+  font-size: 1.375rem;
+}
+
 /* Fade-in animation */
 .fade-in {
   opacity: 0;
