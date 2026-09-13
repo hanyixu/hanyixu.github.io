@@ -2,7 +2,7 @@
 > Hanyi Xu 的个人学术主页，包含个人简介、研究兴趣、论文与报告列表，以及 CV 下载入口。
 
 ## 重要页面（建议优先阅读）
-- [主页 / About Me](https://hanyixu.com/): 个人简介、研究方向概述，以及联系方式与外部主页链接（ORCID/GitHub/LinkedIn）。
+- [主页 / About Me](https://hanyixu.com/): 个人简介、研究方向概述，以及联系方式与外部主页链接（ORCID/GitHub/LinkedIn/FSU 目录页）。
 - [Research Interests](https://hanyixu.com/research.html): 研究兴趣与主题说明，并包含硕士论文《Why Games Stop Feeling Fun》与关键发现摘要。
 - [Publications & Presentations](https://hanyixu.com/publications.html): 论文与报告（manuscripts、presentations）条目列表，含 DOI 与部分 PDF/Slides 链接。
 - [CV](https://hanyixu.com/cv.html): 简历下载入口（PDF）。
@@ -18,3 +18,4 @@
 - ORCID：https://orcid.org/0009-0002-0257-3630
 - GitHub：https://github.com/hanyixu
 - LinkedIn：https://www.linkedin.com/in/hanyixu
+- FSU 学院目录页：https://directory.cci.fsu.edu/hanyi-xu/
