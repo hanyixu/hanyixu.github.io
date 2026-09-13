@@ -967,6 +967,209 @@ a:hover {
   }
 }
 
+/* Publications — profile links under hero */
+.pub-profiles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.pub-profiles a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: var(--font-label);
+  font-size: 0.8125rem;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  color: var(--color-primary-container);
+}
+
+.pub-profiles a:hover {
+  color: var(--color-primary);
+}
+
+.pub-profiles .material-symbols-outlined {
+  font-size: 1.1rem;
+}
+
+/* Timeline (Aceternity-style scroll beam, themed) */
+.timeline {
+  --tl-node-size: 40px;
+  --tl-node-dot: 14px;
+  --tl-rail-x: 20px; /* rail center == node center (node-size / 2) */
+  position: relative;
+  padding: 0.5rem 0 1.5rem;
+}
+
+.timeline__track {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: calc(var(--tl-rail-x) - 1px);
+  width: 2px;
+  border-radius: 2px;
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    rgba(13, 92, 99, 0.18) 6%,
+    rgba(13, 92, 99, 0.18) 94%,
+    transparent 100%
+  );
+  pointer-events: none;
+}
+
+.timeline__beam {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  border-radius: 2px;
+  opacity: 0;
+  background: linear-gradient(
+    to top,
+    var(--color-primary-container) 0%,
+    #2f9aa3 16%,
+    rgba(47, 154, 163, 0) 100%
+  );
+  will-change: height;
+}
+
+.timeline__beam-tip {
+  position: absolute;
+  left: 50%;
+  bottom: -3px;
+  width: 9px;
+  height: 9px;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  background: #45b3bc;
+  box-shadow: 0 0 10px 2px rgba(47, 154, 163, 0.65),
+    0 0 4px 1px rgba(144, 210, 218, 0.9);
+}
+
+.timeline__entry {
+  position: relative;
+  z-index: 1;
+  padding-top: 2.5rem;
+  padding-left: calc(var(--tl-node-size) + 14px);
+}
+
+.timeline__entry:first-of-type {
+  padding-top: 0.5rem;
+}
+
+.timeline__node {
+  position: absolute;
+  left: 0;
+  top: 2.5rem;
+  width: var(--tl-node-size);
+  height: var(--tl-node-size);
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--color-background);
+  z-index: 2;
+}
+
+.timeline__entry:first-of-type .timeline__node {
+  top: 0.5rem;
+}
+
+.timeline__node::after {
+  content: "";
+  width: var(--tl-node-dot);
+  height: var(--tl-node-dot);
+  border-radius: 50%;
+  background: var(--color-surface-container);
+  border: 1px solid var(--color-outline);
+  transition: background var(--transition), border-color var(--transition),
+    box-shadow var(--transition), transform var(--transition);
+}
+
+.timeline__node.is-active::after {
+  background: var(--color-primary-container);
+  border-color: var(--color-primary);
+  transform: scale(1.08);
+  box-shadow: 0 0 0 4px rgba(13, 92, 99, 0.14),
+    0 0 10px 2px rgba(47, 154, 163, 0.45);
+}
+
+.timeline__aside {
+  margin-bottom: 1rem;
+}
+
+.timeline__year {
+  margin: 0;
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: clamp(1.75rem, 5vw, 2.25rem);
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: var(--color-primary);
+  white-space: nowrap;
+  min-height: var(--tl-node-size);
+  display: flex;
+  align-items: center;
+}
+
+.timeline__count {
+  margin: 0.35rem 0 0;
+  font-family: var(--font-label);
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+}
+
+@media (min-width: 768px) {
+  .timeline__entry {
+    display: flex;
+    gap: var(--gutter);
+    align-items: flex-start;
+    padding-top: 4rem;
+    padding-left: 0;
+  }
+
+  .timeline__entry:first-of-type {
+    padding-top: 1rem;
+  }
+
+  .timeline__node {
+    top: 4rem;
+  }
+
+  .timeline__entry:first-of-type .timeline__node {
+    top: 1rem;
+  }
+
+  .timeline__aside {
+    flex: 0 0 clamp(160px, 22%, 240px);
+    position: sticky;
+    top: calc(var(--header-height) + 2rem);
+    align-self: flex-start;
+    margin-bottom: 0;
+    padding-left: calc(var(--tl-node-size) + 16px);
+  }
+
+  .timeline__year {
+    font-size: clamp(2rem, 3.2vw, 2.75rem);
+  }
+
+  .timeline__body {
+    flex: 1 1 auto;
+    min-width: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .timeline__node::after {
+    transition: none;
+  }
+}
+
 /* CV page */
 .cv-page-header {
   --cv-title-leading-gap: calc(0.67 * clamp(2.25rem, 5vw, 3rem));
