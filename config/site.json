@@ -33,7 +33,7 @@
   },
   "about": {
     "locationLine": "Ningbo, China",
-    "introText": "I am a PhD student at Florida State University School of Communication. I am interested in the intersection of media psychology, human-computer interaction, and computational social science. My work uses data-driven methods to explore how digital platforms, especially online games, shape user emotions and identities. I am interested in understanding why and how interactive media shapes users\u2019 emotions.",
+    "introText": "I am a Ph.D. student in the School of Communication at Florida State University (FSU). My research examines how people cognitively and emotionally engage with media and communication technologies, and how that engagement shapes their decisions, social connections, and well-being. I am especially interested in interactive media and AI, and in how these technologies can be designed to support healthier human-technology interaction. Before FSU, I earned an M.A. in Quantitative Methods in the Social Sciences from Columbia University and a B.S. in Advertising from Syracuse University.",
     "education": [
       {
         "school": "Columbia University",
@@ -42,6 +42,26 @@
       {
         "school": "Syracuse University",
         "degree": "B.Sc., Advertising"
+      }
+    ],
+    "affiliations": [
+      {
+        "name": "Cognition and Emotion Lab",
+        "acronym": "CEL",
+        "org": "Florida State University",
+        "url": "https://cel.cci.fsu.edu/"
+      },
+      {
+        "name": "Prosocial AI and Communication Technology Lab",
+        "acronym": "PACT",
+        "org": "Florida State University",
+        "url": "https://www.pactlab.org/"
+      },
+      {
+        "name": "Interactions in Communication Contexts Lab",
+        "acronym": "ICC",
+        "org": "Florida State University",
+        "url": "https://icc.cci.fsu.edu/"
       }
     ],
     "researchInterests": [

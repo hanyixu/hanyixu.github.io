@@ -124,6 +124,34 @@
       }
     }
 
+    var affEl = document.querySelector('[data-site-block="affiliations"]');
+    if (affEl) {
+      var affs = get(cfg, 'about.affiliations');
+      if (affs && affs.length) {
+        affEl.textContent = '';
+        affs.forEach(function (item) {
+          var card = document.createElement(item.url ? 'a' : 'div');
+          card.className = item.url ? 'card card--link' : 'card';
+          if (item.url) {
+            card.href = item.url;
+            card.target = '_blank';
+            card.rel = 'noopener noreferrer';
+          }
+          var title = document.createElement('h3');
+          title.className = 'card__title';
+          title.textContent = item.acronym ? item.name + ' (' + item.acronym + ')' : item.name || '';
+          card.appendChild(title);
+          if (item.org) {
+            var sub = document.createElement('p');
+            sub.className = 'card__subtitle';
+            sub.textContent = item.org;
+            card.appendChild(sub);
+          }
+          affEl.appendChild(card);
+        });
+      }
+    }
+
     var chipsEl = document.querySelector('[data-site-block="research-interests"]');
     if (chipsEl) {
       var interests = get(cfg, 'about.researchInterests');
